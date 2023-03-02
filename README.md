@@ -1,23 +1,24 @@
-# TÍTULO DO PROJETO
+# AgendAi
 
-`CURSO`
+`Análise e desenvolvimento de sistemas`
 
-`DISCIPLINA`
+`Eixo 2 - Projeto: Desenvolvimento de uma Aplicação Interativa`
 
-`SEMESTRE`
+`Turma 03 - 2023/1`
 
 Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Kaliane Silva Diniz
+* Victor Igne Franco Rocha
+* Thaís Cristine Santana Oliveira
+* Lucas Faislon Rodrigues
+* Joe Monteiro de Souza
 
 ## Orientador
 
-* Nome completo do professor 1
+* José Wilson da Costa
 
 ## Instruções de utilização
 
