@@ -15,6 +15,8 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 * Thaís Cristine Santana Oliveira
 * Lucas Faislon Rodrigues
 * Joe Monteiro de Souza
+* Thiago Gomes da Silva
+
 
 ## Orientador
 
