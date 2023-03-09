@@ -23,8 +23,6 @@ Bruna tem 30 anos, é casada e tem 2 filhos. Ela é responsável pela parte de a
 | Matheus | ter um controle melhor e mais preciso dos notebook | saber quais e quantos precisam de manutenção |
 | Bruno | organizar melhor os horários disponíveis entre um agendamento e outro | não ter conflito de horário nos agendamentos |
 
-![image](https://user-images.githubusercontent.com/114962362/224176872-7f88fcbb-ed73-43c1-9b98-828dcd7d4b0f.png)
-
 ## Requisitos
 
 A lista que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
