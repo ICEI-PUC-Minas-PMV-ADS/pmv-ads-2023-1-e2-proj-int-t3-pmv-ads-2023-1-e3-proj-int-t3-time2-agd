@@ -18,6 +18,10 @@ Bruna tem 30 anos, é casada e tem 2 filhos. Ela é responsável pela parte de a
 |  --- | --- | --- |
 | Patrícia | utilizar os notebooks disponível no colégio | criar aulas mais dinâmicas e conteúdos mais diversos |
 | João Pedro | utilizar os notebooks disponíveis | responder as avaliações dos professores e dispor de ferramentas mais amplas de pesquisa |
+| Julia | ter aulas utilizando os notebooks | para aprender de maneira mais dinâmica |
+| Patrícia | agendar horários a longo prazo, de acordo com o cronograma | dar aulas mais interativas e menos cansativas para os alunos |
+| Matheus | ter um controle melhor e mais preciso dos notebook | saber quais e quantos precisam de manutenção |
+| Bruno | organizar melhor os horários disponíveis entre um agendamento e outro | não ter conflito de horário nos agendamentos |
 
 ![image](https://user-images.githubusercontent.com/114962362/224176872-7f88fcbb-ed73-43c1-9b98-828dcd7d4b0f.png)
 
