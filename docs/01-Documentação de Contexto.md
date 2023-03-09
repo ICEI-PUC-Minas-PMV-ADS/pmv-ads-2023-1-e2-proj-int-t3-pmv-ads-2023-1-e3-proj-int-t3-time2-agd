@@ -1,46 +1,31 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
-
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
-
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+A problemática está na forma em que se aplica essa formalização de locação. A princípio, era utilizada uma agenda física, com o controle de: - horário de ínicio do empréstimo
+- horário final do empréstimo
+- professor ou solicitante
+- sala ( ou turma )
+- quantidade Ainda assim, muitas divergências ocorriam, como por exemplo: - cancelamentos sem aviso prévio;
+- agendamentos com *interseção de horários;*
+- frequência acima do normal de apenas alguns professores;
+- alternância de agendamentos sem aviso prévio ou no dia do agendamento;
+- agendamentos sem 2 dias de antecedência;
+- necessidade de manutenção do equipamento;
+- omissão de avaria do equipamento ( seja por aluno ou professor );
+- falta de zelo com o equipamento;
+- professores que estendem ou acabam antes do esperado o agendamento sem aviso prévio para administração ou suporte técnico
+- outros.
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
-
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+O objetivo com essa aplicação está envolta de buscar facilitar a questão do empréstimo desses equipamentos. Acreditamos que um dos papéis principais do setor de TI, em qualquer empresa, é ser o facilitador de processos e implementação de melhorias. É aprimorando esse processo que teremos um fluxo melhor de empréstimos. Logo, uma aula que seria unicamente docente x livro se torna mais dinâmica ao adicionarmos o equipamento com o acesso à internet. Um grande exemplo disso se dá com o relato da professora Juliana, professora de matemática há 10 anos, que se propôs a expressar um pouco da sua experiência ao utilizar o equipamento para a sua aula de gráficos e plano cartesiano. Em suas palavras: “A princípio, a aula de plano cartesiano e gráficos é bem, como já mencionei, “gráfica”. Eu acabo perdendo um tempo precioso de aula ao desenhar todos os gráficos de todos os exercícios propostos no livro ou apostila. Por conta disso, imaginei que utilizar os notebooks seria de grande ajuda também nesse sentido, com o auxílio do site GEOGEBRA. Ao decorrer da aula isso se ampliou de diversas formas! Foi uma experiência incrível pois os alunos tiveram a oportunidade de aplicar algumas coordenadas da aula de plano cartesiano no google Maps, por exemplo. Algo que seria difícil e não-*palpável se tornou didático e prático. E os alunos amam essa “fuga” do lápis e caderno para algo que já está muito presente no dia a dia deles: a tecnologia.”
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
-
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
-
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+ Primeiramente, adentrando um contexto de empresa de médio porte como um colégio ( que irei utilizar de exemplo o meu trabalho ) reconhecido como tradicional e carioca, o Colégio Saint John. Este que, em seus 35 anos de história, busca aprimorar sempre os seus projetos pedagógicos. Adaptando-se a novas formas de aprender e ensinar, principalmente utilizando de instrumentos tecnológicos, que adicionam dinamismo, praticidade e inovação. Que atualmente  é um grande diferencial no âmbito da educação.
+    Por conta disso, informatizar processos é de extrema necessidade para acompanhar o crescimento tecnológico do colégio. Ainda na questão de incrementação de aparato tecnológico, entramos com um contrato com a empresa de equipamentos “Positivo”, em um total de 30 notebooks e outros tipo de suporte técnicos. Esses notebooks ficam disponíveis para o uso diário e coletivo de docentes de estudantes. 
+    Ao todo, temos mais ou menos 110 professores e professoras que fazem uso desse equipamento, com turmas espalhadas entre os 4 segmentos ( sendo eles: educação infantil, séries iniciais, séries finais e ensino médio). Formalizar a locação desses notebooks é uma necessidade, pois todos os alunos precisam ter acesso aos equipamentos oferecidos pela escola assim como os professores precisam ter o suporte tecnológico e técnico para planejar e aplicar suas aulas, alinhadas com a BNCC.
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
-
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
-
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+Essa aplicação tem como público alvo os professores da instituição, que usufruem da disponibilidade dos notebooks para agregarem em suas dinâmicas em sala de aula.A gestão administrativa da escola, que consegue fazer um monitoramento mais assertivo e consequentemente mais organizado do material e assim manter uma comunicação clara e com registros constantes que podem servir de feedback para a empresa de suporte e assistência técnica. 
