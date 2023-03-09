@@ -21,9 +21,13 @@ A lista que se seguem apresentam os requisitos funcionais e não funcionais que 
 ### Requisitos Funcionais
 RF-001 - O sistema deve fornecer à coordenação a possibilidade de login como "administrador" para o registro dos hardwares e seus códigos ou baixas por avaria.
 O administrador também deve ser capaz de registrar as salas da instituição e dar baixa nas mesmas também por questões de avaria ou eventos da própria diretoria;
+
 RF-002 - O sistema deve fornecer aos instrutores (usuários) a possibilidade de cadastro de perfil e login para melhor controle dos empréstimos de notebooks e salas;
+
 RF-003 - O sistema deve possuir um mecanismo de controle de horário de empréstimo para evitar a interseção de horários por parte dos usuários;
+
 RF-004 - O sistema deve fornecer aos usuários a possibilidade de cancelamento de aluguel para disponibilizar aos outros usuários caso não seja mais necessário;
+
 RF-005 - O sistema deve fornecer aos usuários a possibilidade de informe de avarias nos notebooks e salas para agilizar a avaliação e baixa no sistema por parte do administrador.
 
 ### Requisitos não Funcionais
