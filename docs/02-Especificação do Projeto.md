@@ -14,6 +14,11 @@ Bruna tem 30 anos, é casada e tem 2 filhos. Ela é responsável pela parte de a
 
 ## Histórias de Usuários
 
+| **Eu como … [PERSONA]** | **… quero/desejo … [O QUE]** | **… para … [POR QUE]** |
+|  ---------------------- | ---------------------------- | ---------------------- |
+| Patrícia | utilizar os notebooks disponível no colégio | criar aulas mais dinâmicas e conteúdos mais diversos |
+| João Pedro | utilizar os notebooks disponíveis | responder as avaliações dos professores e dispor de ferramentas mais amplas de pesquisa |
+
 ![image](https://user-images.githubusercontent.com/114962362/224176872-7f88fcbb-ed73-43c1-9b98-828dcd7d4b0f.png)
 
 ## Requisitos
