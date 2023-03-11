@@ -28,23 +28,23 @@ Bruna tem 30 anos, é casada e tem 2 filhos. Ela é responsável pela parte de a
 A lista que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
 
 ### Requisitos Funcionais
-RF-001 - O sistema deve fornecer à coordenação a possibilidade de login como "administrador", com funcionalidades específicas que diferem das permitidas ao usuário “professor”;
+|RF-001| - |O sistema deve fornecer à coordenação a possibilidade de login como "administrador", com funcionalidades específicas que diferem das permitidas ao usuário “professor”;|
 
-RF-002 - O perfil administrador terá a possibilidade de: registrar os equipamentos com suas identificações ( ex: SJOHNNTXXX ), especificações ( Nº DE SÉRIE, SISTEMA OPERACIONAL, MODELO ETC ), além do controle de estoque. Ademais, o administrador gerencia operações específicas do sistema como: permissão, alteração e/ou cancelamento de agendamentos;
+|RF-002| - |O perfil administrador terá a possibilidade de: registrar os equipamentos com suas identificações ( ex: SJOHNNTXXX ), especificações ( Nº DE SÉRIE, SISTEMA OPERACIONAL, MODELO ETC ), além do controle de estoque. Ademais, o administrador gerencia operações específicas do sistema como: permissão, alteração e/ou cancelamento de agendamentos;|
 
-RF-003- Ao acessar o servidor o usuário deverá se identificar com seu e-mail institucional;
+|RF-003|- |Ao acessar o servidor o usuário deverá se identificar com seu e-mail institucional;
 
-RF-004 - O usuário poderá realizar o agendamento do empréstimo do equipamento na data desejada, desde que o horário esteja disponível e o usuário preencha os dados requisitados ( dentre eles: e-mail institucional, sala, turma e a quantidade de notebooks) necessários para o agendamento;
+|RF-004| - |O usuário poderá realizar o agendamento do empréstimo do equipamento na data desejada, desde que o horário esteja disponível e o usuário preencha os dados requisitados ( dentre eles: e-mail institucional, sala, turma e a quantidade de notebooks) necessários para o agendamento;|
 
-RF-005 - O sistema deve possuir uma condição de controle de horário do empréstimo para evitar a interseção de agendamentos por parte dos usuários;
+|RF-005| - |O sistema deve possuir uma condição de controle de horário do empréstimo para evitar a interseção de agendamentos por parte dos usuários;|
 
-RF-006- O sistema deve fornecer aos usuários a possibilidade de cancelamento do seu próprio agendamento por meio do preenchimento de um formulário com: e-mail institucional e justificativa;OBS: esse formulário será enviado para o suporte administrativo, para ter ciência do ocorrido.
+|RF-006| - |O sistema deve fornecer aos usuários a possibilidade de cancelamento do seu próprio agendamento por meio do preenchimento de um formulário com: e-mail institucional e justificativa;OBS: esse formulário será enviado para o suporte administrativo, para ter ciência do ocorrido.|
 
-RF-007 - O sistema deve fornecer aos usuários a possibilidade de informar ao perfil administrativo por meio de uma TAG quaisquer informações relacionadas a avarias nos equipamentos e requisições adicionais ao software; O perfil administrativo terá uma aba de notificações com as mensagens recebidas separadas por TAGS;
+|RF-007| - |O sistema deve fornecer aos usuários a possibilidade de informar ao perfil administrativo por meio de uma TAG quaisquer informações relacionadas a avarias nos equipamentos e requisições adicionais ao software; O perfil administrativo terá uma aba de notificações com as mensagens recebidas separadas por TAGS;|
 
-RF-008 - Mecanismo de busca por datas ( ex: 20/10/2023 );
+|RF-008| - |Mecanismo de busca por datas ( ex: 20/10/2023 );|
 
-RF-009 - O sistema precisará diferenciar o usuário por meio do seu e-mail institucional;RF-010- O sistema irá restringir mais de 5 agendamentos semanais por usuário (professor).
+|RF-009| - |O sistema precisará diferenciar o usuário por meio do seu e-mail institucional;RF-010- O sistema irá restringir mais de 5 agendamentos semanais por usuário (professor).|
 
 ### Requisitos não Funcionais
 
