@@ -64,5 +64,6 @@ A lista que se seguem apresentam os requisitos funcionais e não funcionais que 
 
 ## Casos de Uso
 
+![image](https://user-images.githubusercontent.com/71721477/224516023-66c7f438-f0e4-456b-82ff-982935fbaf8c.png)
 
 
