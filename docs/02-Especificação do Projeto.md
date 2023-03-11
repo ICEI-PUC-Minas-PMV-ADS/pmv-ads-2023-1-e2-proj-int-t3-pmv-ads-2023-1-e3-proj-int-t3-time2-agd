@@ -56,10 +56,14 @@ RNF-003 - O sistema deverá gerar um relatório de estado dos equipamentos para 
 
 RFN-005 - A aplicação será desenvolvida na linguagem C#;
 
+
+
 ## Restrições
 
-O projeto está restrito pelos itens apresentados na lista a seguir.
+RF001 - Não haverá versão web e mobile;
 
-001 - No momento não estará disponível como aplicação móvel, apenas desktop.
+RF002 - O sistema não terá a opção de selecionar outros idiomas. Todo o website será em Português-BR.
+
+RF003 - O projeto deverá ser entregue no final do semestre letivo, não podendo extrapolar o prazo estipulado.
 
 
