@@ -62,4 +62,7 @@ A lista que se seguem apresentam os requisitos funcionais e não funcionais que 
 | RF002 | O sistema não terá a opção de selecionar outros idiomas. Todo o website será em Português-BR. | BAIXO |
 | RF003 | O projeto deverá ser entregue no final do semestre letivo, não podendo extrapolar o prazo estipulado. | ALTA | 
 
+## Casos de Uso
+
+
 
