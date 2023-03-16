@@ -2,7 +2,7 @@
 
 ## Personas
 
-Patrícia tem 51 anos, é professora de matemática e tem um perfil inovador. Gosta de manter-se bem informada e utiliza desta característica para criar aulas mais dinâmicas.
+Patrícia tem 51 anos, é professora de matemática e tem um perfil inovador. Gosta de manter-se bem informada e utiliza desta característica para criar aulas mais dinâmicas e atuais.
 
 João Pedro tem 33 anos e é professor do Ensino Médio da rede privada do Rio de Janeiro. Uma pessoa muito ligada à tecnologia e nas interações que facilitam o cenário mundial.
 
