@@ -14,12 +14,11 @@ Bruna tem 47 anos e é responsável pela parte administrativa da rede privada do
 
 | **Eu como … [PERSONA]** | **… quero/desejo … [O QUE]** | **… para … [POR QUE]** |
 |  --- | --- | --- |
-| Patrícia | utilizar os notebooks disponível no colégio | criar aulas mais dinâmicas e conteúdos mais diversos |
-| João Pedro | utilizar os notebooks disponíveis | responder as avaliações dos professores e dispor de ferramentas mais amplas de pesquisa |
-| Julia | ter aulas utilizando os notebooks | para aprender de maneira mais dinâmica |
-| Patrícia | agendar horários a longo prazo, de acordo com o cronograma | dar aulas mais interativas e menos cansativas para os alunos |
+| Patrícia | agendar empréstimos mensais dos notebooks | aplicação do teste online e só será possível se tiver notebook diponível |
+| João Pedro | agendar horários a longo prazo, de acordo com o cronograma | garantir que tenha um notebook disponível neste horário de aula |
+| Matheus | manter um intervalo entre um agendamento e outro | que não interfira no horário do agendamento seguinte |
+| Bruna | garantir uma organização prévia dos atendimentos | não ter conflito de horário dos agendamentos |
 | Matheus | ter um controle melhor e mais preciso dos notebook | saber quais e quantos precisam de manutenção |
-| Bruno | organizar melhor os horários disponíveis entre um agendamento e outro | não ter conflito de horário nos agendamentos |
 
 ## Requisitos
 
