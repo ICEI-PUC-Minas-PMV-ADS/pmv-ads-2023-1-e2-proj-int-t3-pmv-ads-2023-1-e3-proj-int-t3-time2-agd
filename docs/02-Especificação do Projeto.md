@@ -4,7 +4,7 @@
 
 Patrícia tem 51 anos, é professora de matemática e tem um perfil inovador. Gosta de manter-se bem informada e utiliza desta característica para criar aulas mais dinâmicas.
 
-João Pedro tem 33 anos e é professor do Ensino Médio de uma rede privada do Rio de Janeiro. Uma pessoa muito ligada à tecnologia e nas interações que facilitam o cenário mundial.
+João Pedro tem 33 anos e é professor do Ensino Médio da rede privada do Rio de Janeiro. Uma pessoa muito ligada à tecnologia e nas interações que facilitam o cenário mundial.
 
 Matheus tem 25 anos e está cursando Análise e Desenvolvimento de Sistemas. Atualmente trabalha na administração da rede privada do Rio de Janeiro e é muito dedicado, está sempre compartilhando novidades tecnológicas que facilitam e otimizam os processos de trabalho.
 
