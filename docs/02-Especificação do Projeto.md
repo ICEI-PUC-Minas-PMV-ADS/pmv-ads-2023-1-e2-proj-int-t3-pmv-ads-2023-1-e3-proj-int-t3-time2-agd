@@ -2,15 +2,13 @@
 
 ## Personas
 
-Patrícia tem 51 anos, casada, é professora de matemática e tem perfil inovador e focado em números. Gosta de ficar por dentro das novidades, com  o objetivo de deixar suas aulas mais dinâmicas e interativas.
+Patrícia tem 51 anos, é professora de matemática e tem um perfil inovador. Gosta de manter-se bem informada e utiliza desta característica para criar aulas mais dinâmicas.
 
-João Pedro tem 14 anos, é estudante do 9º ano do Ensino Fundamental de uma rede privada do Rio de Janeiro. Gosta de videogame e jogos online.
+João Pedro tem 33 anos e é professor do Ensino Médio de uma rede privada do Rio de Janeiro. Uma pessoa muito ligada à tecnologia e nas interações que facilitam o cenário mundial.
 
-Julia tem 16 anos e é estudante de uma rede privada no Rio de Janeiro, ela está no 2º ano do Ensino Médio. Passa grande parte do tempo mexendo nas redes sociais, principalmente TikTok e Instagram,  e está sempre por dentro das tendências. Julia se interessa por moda e estilo, pretende cursar Design de Moda na faculdade.
+Matheus tem 25 anos e está cursando Análise e Desenvolvimento de Sistemas. Atualmente trabalha na administração da rede privada do Rio de Janeiro e é muito dedicado, está sempre compartilhando novidades tecnológicas que facilitam e otimizam os processos de trabalho.
 
-Matheus é solteiro e tem 24 anos. Trabalha no setor técnico da rede privada desde 2018. É muito focado no trabalho e tem o objetivo de cursar Redes de Computadores para  abrir sua própria empresa de Datacenter.
-
-Bruna tem 30 anos, é casada e tem 2 filhos. Ela é responsável pela parte de administração da rede privada que trabalha há 7 anos e ama o que faz, isso a incentivou a começar o curso de Administração e Gestão de Empresas. Bruna valoriza muito o tempo com sua família, gosta de frequentar a praia, parques e restaurantes.
+Bruna tem 47 anos e é responsável pela parte administrativa da rede privada do Rio de Janeiro. Por não ter muita familiaridade com a tecnologia, prefere utilizar sistemas mais básicos e , que sejam autoexplicativos e de fácil entendimento.
 
 ## Histórias de Usuários
 
