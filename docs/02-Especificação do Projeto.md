@@ -36,18 +36,18 @@ A lista que se seguem apresentam os requisitos funcionais e não funcionais que 
 | RF-006 | O sistema deve fornecer aos usuários a possibilidade de cancelamento do seu próprio agendamento por meio do preenchimento de um formulário com: e-mail institucional e justificativa;OBS: esse formulário será enviado para o suporte administrativo, para ter ciência do ocorrido |  MEDIO |
 | RF-007 | O sistema deve fornecer aos usuários a possibilidade de informar ao perfil administrativo por meio de uma TAG quaisquer informações relacionadas a avarias nos equipamentos e requisições adicionais ao software; O perfil administrativo terá uma aba de notificações com as mensagens recebidas separadas por TAGS |  BAIXO |
 | RF-008 | Mecanismo de busca por datas ( ex: 20/10/2023 ) |  BAIXO |
-| RF-009 | O sistema precisará diferenciar o usuário por meio do seu e-mail institucional; |  BAIXO |
+| RF-009 | O sistema precisará diferenciar o usuário por meio do seu e-mail institucional |  BAIXO |
 | RF-010 | O sistema irá restringir mais de 5 agendamentos semanais por usuário (professor) |  BAIXO |
 
 ### Requisitos não Funcionais
 
 | **Numeração** | **Descrição** | **Prioridade** |
 |  --- | --- | --- |
-| RNF-001 | O sistema deve ser uma aplicação desktop; |  ALTA |
-| RNF-002 | O sistema deve ser feito com framework .NET. | MEDIO |
-| RNF-003 | O sistema deverá gerar um relatório de estado dos equipamentos para a administração; | BAIXO |
-| RFN-004 | O sistema deve gerar um relatório de frequência de uso dos professores; | BAIXO |
-| RFN-005 | A aplicação será desenvolvida na linguagem C#; | ALTA |
+| RNF-001 | O sistema deve ser uma aplicação desktop |  ALTA |
+| RNF-002 | O sistema deve ser feito com framework .NET | MEDIO |
+| RNF-003 | O sistema deverá gerar um relatório de estado dos equipamentos para a administração | BAIXO |
+| RFN-004 | O sistema deve gerar um relatório de frequência de uso dos professores | BAIXO |
+| RFN-005 | A aplicação será desenvolvida na linguagem C# | ALTA |
 
 
 
@@ -56,8 +56,8 @@ A lista que se seguem apresentam os requisitos funcionais e não funcionais que 
 | **Numeração** | **Descrição** | **Prioridade** |
 |  --- | --- | --- |
 | RF001 | Não haverá versão web e mobile; | ALTA |  
-| RF002 | O sistema não terá a opção de selecionar outros idiomas. Todo o website será em Português-BR. | BAIXO |
-| RF003 | O projeto deverá ser entregue no final do semestre letivo, não podendo extrapolar o prazo estipulado. | ALTA | 
+| RF002 | O sistema não terá a opção de selecionar outros idiomas. Todo o website será em Português-BR | BAIXO |
+| RF003 | O projeto deverá ser entregue no final do semestre letivo, não podendo extrapolar o prazo estipulado | ALTA | 
 
 ## Casos de Uso
 
