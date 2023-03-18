@@ -28,7 +28,7 @@ A lista que se seguem apresentam os requisitos funcionais e não funcionais que 
 
 | **Numeração** | **Descrição** | **Prioridade** |
 |  --- | --- | --- |
-| RF-001 | O sistema deve fornecer à coordenação a possibilidade de login como "administrador", com funcionalidades específicas que diferem das permitidas ao usuário “professor” |  ALTA |
+| RF-001 | O sistema deve fornecer à coordenação a possibilidade de um login genérico, onde o usuário irá inserir nome, e-mail e código de identificação |  ALTA |
 | RF-002 | O perfil administrador terá a possibilidade de: registrar os equipamentos com suas identificações ( ex: SJOHNNTXXX ), especificações ( Nº DE SÉRIE, SISTEMA OPERACIONAL, MODELO ETC ), além do controle de estoque. Ademais, o administrador gerencia operações específicas do sistema como: permissão, alteração e/ou cancelamento de agendamentos |  ALTA |
 | RF-003 | Ao acessar o servidor o usuário deverá se identificar com seu e-mail institucional |  ALTA |
 | RF-004 | O usuário poderá realizar o agendamento do empréstimo do equipamento na data desejada, desde que o horário esteja disponível e o usuário preencha os dados requisitados ( dentre eles: e-mail institucional, sala, turma e a quantidade de notebooks) necessários para o agendamento |  ALTA |
