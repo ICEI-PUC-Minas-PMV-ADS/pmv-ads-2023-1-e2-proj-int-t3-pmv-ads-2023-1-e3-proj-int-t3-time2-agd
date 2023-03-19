@@ -28,7 +28,6 @@ A lista que se seguem apresentam os requisitos funcionais e não funcionais que 
 
 | **Numeração** | **Descrição** | **Prioridade** |
 |  --- | --- | --- |
-| RF-001 | O sistema deve fornecer à coordenação a possibilidade de um login onde o usuário irá inserir nome e e-mail institucional |  ALTA |
 | RF-001 | O sistema deve fornecer ao usuário a opção de login através do e-mail institucional. Caso seja o perfil administrativo, o sistema também irá requerir a senha |  ALTA |
 | RF-002 | O perfil administrador terá a possibilidade de: registrar os equipamentos com suas identificações ( ex: SJOHNNTXXX ), especificações ( Nº DE SÉRIE, SISTEMA OPERACIONAL, MODELO ETC ), além do controle de estoque. Ademais, o administrador gerencia operações específicas do sistema como: permissão, alteração e/ou cancelamento de agendamentos |  ALTA |
 | RF-003 | Ao acessar o servidor o usuário deverá se identificar com seu e-mail institucional |  ALTA |
