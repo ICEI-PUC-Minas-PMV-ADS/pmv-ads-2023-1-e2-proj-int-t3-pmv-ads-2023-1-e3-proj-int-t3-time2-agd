@@ -1,8 +1,7 @@
 # Arquitetura da Solução
 
-<span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>
+![WhatsApp Image 2023-03-30 at 19 27 50](https://user-images.githubusercontent.com/115894941/230732807-ee34db48-13c3-4da0-9f43-b1dddb898e9b.jpeg)
 
-Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
 
 ## Diagrama de Classes
 
