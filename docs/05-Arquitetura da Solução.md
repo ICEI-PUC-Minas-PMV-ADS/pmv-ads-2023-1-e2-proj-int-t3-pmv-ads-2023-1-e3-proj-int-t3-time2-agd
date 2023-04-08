@@ -9,8 +9,6 @@ Definição de como o software é estruturado em termos dos componentes que faze
 ![WhatsApp Image 2023-03-30 at 21 32 05](https://user-images.githubusercontent.com/115894941/230732713-107c45ca-8d8e-43d2-9351-fbf76d05e629.jpeg)
 
 
-> - [Diagramas de Classes - Documentação da IBM](https://www.ibm.com/docs/pt-br/rational-soft-arch/9.6.1?topic=diagrams-class)
-> - [O que é um diagrama de classe UML? | Lucidchart](https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-classe-uml)
 
 ## Modelo ER (Projeto Conceitual)
 
