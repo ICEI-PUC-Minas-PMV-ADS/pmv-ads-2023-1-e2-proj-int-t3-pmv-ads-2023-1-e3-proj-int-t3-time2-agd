@@ -1,8 +1,5 @@
 # Arquitetura da Solução
 
-![WhatsApp Image 2023-03-30 at 19 27 50](https://user-images.githubusercontent.com/115894941/230732807-ee34db48-13c3-4da0-9f43-b1dddb898e9b.jpeg)
-
-
 ## Diagrama de Classes
 
 ![WhatsApp Image 2023-03-30 at 21 32 05](https://user-images.githubusercontent.com/115894941/230732713-107c45ca-8d8e-43d2-9351-fbf76d05e629.jpeg)
@@ -11,7 +8,7 @@
 
 ## Modelo ER (Projeto Conceitual)
 
-O Modelo ER representa através de um diagrama como as entidades (coisas, objetos) se relacionam entre si na aplicação interativa.
+![Funcionarios](https://user-images.githubusercontent.com/114962362/230788472-41172ec1-9ff3-435e-b499-0e736068a8b0.png)
 
 Sugestão de ferramentas para geração deste artefato: LucidChart e Draw.io.
 
