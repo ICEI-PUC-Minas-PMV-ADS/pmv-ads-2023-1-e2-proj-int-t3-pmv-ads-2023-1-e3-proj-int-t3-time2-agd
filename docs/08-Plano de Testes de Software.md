@@ -14,7 +14,7 @@ Cenários de testes utilizados na realização dos testes da aplicação AgendAI
 | Caso de Teste	| CT-02 – Cadastrar Equipamentosl|
 |	Requisito Associado 	| RF-002 O perfil administrador terá a possibilidade de: registrar os equipamentos com suas identificações ( ex: SJOHNNTXXX ), especificações ( Nº DE SÉRIE, SISTEMA OPERACIONAL, MODELO ETC ), além do controle de estoque. Ademais, o administrador gerencia operações específicas do sistema como: permissão, alteração e/ou cancelamento de agendamentos|
 | Objetivo do Teste 	| Verificar se o usuário consegue se cadastrar na aplicação os equipamentos com suas respectivas especificações de identificação. |
-| Passos 	|  |
+| Passos 	|  - Acessar o navegador <br> - Informar o endereço do site <br> - Clicar em "Admnistrador" <br> - Clicar em "Equipamentos" <br>- Preencher os campos obrigatórios em Cadastro de Equipamentos(Hostname, Nº de Série, Sistema Operacional, Modelo, Quantidade) <br> - Clicar em "Cadastrar" |
 |Critério de Êxito | - O cadastro foi realizado com sucesso. |
 |  	|  	|
 | **Caso de Teste** 	| **CT-03** 	|
@@ -26,7 +26,7 @@ Cenários de testes utilizados na realização dos testes da aplicação AgendAI
 | Caso de Teste 	| CT-04 – Efetuar Agendamento	|
 |Requisito Associado | RF-004	- O usuário poderá realizar o agendamento do empréstimo do equipamento na data desejada, desde que o horário esteja disponível e o usuário preencha os dados requisitados ( dentre eles: e-mail institucional, sala, turma e a quantidade de notebooks) necessários para o agendamento|
 | Objetivo do Teste 	| Verificar fez o agendamento corretamente. |
-| Passos 	| |
+| Passos 	|  - Acessar o navegador <br> - Informar o endereço do site <br> - Clicar em "Professor" <br> - Clicar em uma data no calendário <br>- Selecionar o horário dentro da faixa de disponibilidade <br>- Preencher os campos obrigatórios de Agendamento(Nome do Professor,Email Institucional,Turma, Quantidade de Equipamentos) <br> - Clicar em "Salvar Agendamento"|
 |Critério de Êxito | - O agendamento foi realizado com sucesso. |
 | **Caso de Teste** 	| **CT-05** 	|
 |	Requisito Associado 	| RF-00X  |
@@ -48,8 +48,8 @@ Cenários de testes utilizados na realização dos testes da aplicação AgendAI
 | Caso de Teste 	| CT-08 – Busca por datas 	|
 |Requisito Associado | RF-008	-Mecanismo de busca por datas ( ex: 20/10/2023 ) |
 | Objetivo do Teste 	| Fazer uma busca de agendamento por data. |
-| Passos 	| |
-|Critério de Êxito | - Busca de agendamento por data realizada com sucesso. |
+| Passos 	| - Após selecionar seu perfil de "Administrador" ou de "Professor" <br>-Clicar em "Pesquisar datas" <br>- Selecionar a data que deseja buscar <br>-Clicar em "Buscar" <br>|
+|Critério de Êxito | - O sistema retornar os agendamento feitos para a data selecionada na busca. |
 | **Caso de Teste** 	| **CT-09** 	|
 |	Requisito Associado 	| RF-00X  |
 | Objetivo do Teste 	|  |
@@ -59,7 +59,7 @@ Cenários de testes utilizados na realização dos testes da aplicação AgendAI
 | Caso de Teste 	| CT-10 – Restrição de agendamento 	|
 |Requisito Associado | RF-010	-O sistema irá restringir mais de 5 agendamentos semanais por usuário (professor) |
 | Objetivo do Teste 	| Verificar se o mesmo usuário não excedeu o limite de 5 agendamentos semanais. |
-| Passos 	| |
+| Passos 	| - O usuário fará a seleção de seus agendamentos semanais corretamente até a quinta solicitação, na sexta solicitação quando o usuário clicar em "salvar agendamento" aparecera uma mensagem do sistema na tela "O usuário atingiu seu limite máximo de agendamentos" |
 |Critério de Êxito | - O sistema conseguir identificar com sucesso que nenhum usuário ultrapassou o limite padrão pré-determinado. |
  
 
