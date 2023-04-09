@@ -52,9 +52,9 @@ Cenários de testes utilizados na realização dos testes da aplicação AgendAI
 |Critério de Êxito | - O sistema retornar os agendamento feitos para a data selecionada na busca. |
 | **Caso de Teste** 	| **CT-09 - Diferenciar Usuários** 	|
 |	Requisito Associado 	| RF-009 - O sistema precisará diferenciar o usuário por meio do seu e-mail institucional  |
-| Objetivo do Teste 	|  |
-| Passos 	|  |
-|Critério de Êxito |  |
+| Objetivo do Teste 	|  O sistema precisará diferenciar o usuário de "administrador" ou "professor" por meio do seu e-mail institucional no momento do Login |
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site <br> - Clicar em "Login" <br> - Preencher os campos obrigatórios (email e senha) <br> - Clicar em "Entrar" <br> - Repetir esse processo duas vezes, sendo a primeira com o perfil de administrador e a segunda com o perfil de professor |
+|Critério de Êxito | - As funcionalidades do sistema devem diferir entre os dois usuários. |
 |  	|  	|
 | Caso de Teste 	| **CT-10 – Restrição de agendamento** 	|
 |Requisito Associado | RF-010	-O sistema irá restringir mais de 5 agendamentos semanais por usuário (professor) |
