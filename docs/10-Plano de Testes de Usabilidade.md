@@ -1,15 +1,34 @@
 # Plano de Testes de Usabilidade
 
-Os testes de usabilidade permitem avaliar a qualidade da interface com o usuário da aplicação interativa.
+   Para termos um processo de plano de teste de Usabilidade bem adequado para o projeto, decidimos utilizar o método de “Descoberta de problemas”, sendo o mais indicado para nosso sistema, já que os usuários estarão constantemente acessando o sistema, permitindo assim identificar melhorias e fazer ajustes necessários.
+Em nossa análise, determinamos que os parâmetros utilizados nos testes são:
 
-Um plano de teste de usabilidade deverá conter: o detalhamento dos objetivos (em função dos requisitos levantados/implementados), dos critérios que serão utilizados para a seleção dos participantes, dos procedimentos a serem adotados pelos condutores de teste (por exemplo: os testes serão presenciais ou remotos? o método será observação direta, medição ou avaliação?), das tarefas a serem executadas, dos dados a serem coletados (quantidade de cliques, número de erros, tempo etc.), a ordem de execução das tarefas e das etapas da sessão de teste, recursos demandados, métricas coletadas etc.
+    •	 Qualidade da navegação
 
-Para cada voluntário do teste, é fundamental coletar e apresentar todos os dados/métricas previamente definidos, mas não se esqueça: atendendo à LGPD (Lei Geral de Proteção de Dados), nenhum dado sensível, que permita identificar o voluntário, deverá ser apresentado).
+    •	Eficiência do processo de agendamentos 
 
-As referências abaixo irão auxiliá-lo na geração do artefato "Plano de Testes de Usabilidade".
+    •	Satisfação do usuário ao realizar determinados processos 
 
-> **Links Úteis**:
-> - [Teste De Usabilidade: O Que É e Como Fazer Passo a Passo (neilpatel.com)](https://neilpatel.com/br/blog/teste-de-usabilidade/)
-> - [Teste de usabilidade: tudo o que você precisa saber! | by Jon Vieira | Aela.io | Medium](https://medium.com/aela/teste-de-usabilidade-o-que-voc%C3%AA-precisa-saber-39a36343d9a6/)
-> - [Planejando testes de usabilidade: o que (e o que não) fazer | iMasters](https://imasters.com.br/design-ux/planejando-testes-de-usabilidade-o-que-e-o-que-nao-fazer/)
-> - [Ferramentas de Testes de Usabilidade](https://www.usability.gov/how-to-and-tools/resources/templates.html)
+   E dessa forma poderemos identificar problemas como: 
+
+    •	Dificuldades no fluxo entre partes do sistema
+
+    •	Interface não intuitiva
+
+    •	Possíveis falhas em determinados processos do sistema
+
+    •	Terminologias que podem não fazer sentido para o usuário.
+
+
+   Deste modo, teremos a métrica necessária para identificar se o uso pelo usuário professor está adequado ao funcionamento necessário para o agendamento, além de identificar se os processos de resposta dados ao usuário administração seguem como o esperado para auxiliar na logística e coleta de dados.
+
+   Além disso, o procedimento de operação do teste será feito na escola em que o sistema estará posto, tendo como método o de avaliação e temporizador, analisando como o usuário navegou pelo sistema, tempo para realizar uma tarefa de exemplo (como realizar um agendamento), além da análise de interface, assim, obtendo os dados necessários para se necessário, modificar o sistema de forma que o usuário tenha a melhor navegabilidade.
+   
+   
+   
+   | **Teste de agendamento** 	| **Análise** 	|
+|:---:	|:---:	| 
+| Objetivo do Teste | Verificar a criação de agendamento por parte do usuário  |
+| Passos 	| - Acessar o Sistema <br> - Preencher os campos obrigatórios do "Login" (email e senha) <br> - Clicar em "Entrar" <br> - Clicar em uma data e preencher os dados requistados <br> - Finalizar e conferir agendamento|
+| Informaçõe e métricas | Com a informação dada pelo relatório e o tempo contabilizado, será possível identificar se o sistema respondeu conforme desejado pelo usuario, possibilitando assim o analista gerar a  correlação entre feedback e tempo gasto para análise |
+
