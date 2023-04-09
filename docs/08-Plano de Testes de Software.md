@@ -18,7 +18,7 @@ Cenários de testes utilizados na realização dos testes da aplicação AgendAI
 |Critério de Êxito | - O cadastro foi realizado com sucesso. |
 |  	|  	|
 | **Caso de Teste** 	| **CT-03 - Informe de Login Inválido** 	|
-|	Requisito Associado 	| RF-003  |
+|	Requisito Associado 	| RF-003 - O sistema deve impossibilitar o usuário de continuar o login caso esteja informando um e-mail não autorizado, fazendo-o retomar a etapa de informar o e-mail institucional  |
 | Objetivo do Teste 	| Caso as informações de Login (email e senha) estejam erradas, o sistema deve emitir um alerta de erro ao usuário.  |
 | Passos 	| Acessar o navegador <br> - Informar o endereço do site <br> - Clicar em "Login" <br> - Preencher os campos obrigatórios com informações erradas (email e senha) <br> - Clicar em "Entrar" <br> - Um "balão" de aviso deve subir alertando o usuário sobre o erro |
 |Critério de Êxito | - Login inválido. |
