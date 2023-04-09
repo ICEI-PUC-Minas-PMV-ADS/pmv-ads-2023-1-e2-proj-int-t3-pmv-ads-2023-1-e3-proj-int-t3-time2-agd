@@ -18,7 +18,8 @@ A referência abaixo irá auxiliá-lo na geração do artefato “Modelo ER”.
 
 ## Projeto da Base de Dados
 
-![Imagem do WhatsApp de 2023-04-07 à(s) 21 32 59](https://user-images.githubusercontent.com/99758232/230787810-8401103b-c1b5-4e91-bb6e-5e577cf4d654.jpg)
+![Imagem do WhatsApp de 2023-04-09 à(s) 15 44 42](https://user-images.githubusercontent.com/99758232/230791072-079e82a4-a491-440d-830e-c1fc44ff5133.jpg)
+
 
 
 ## Tecnologias Utilizadas
