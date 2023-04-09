@@ -39,7 +39,7 @@ Cenários de testes utilizados na realização dos testes da aplicação AgendAI
 | Objetivo do Teste 	| Verificar se o cancelamento foi realizado. |
 | Passos 	| |
 |Critério de Êxito | - O cancelamento foi realizado com sucesso. |
-| **Caso de Teste** 	| **CT-07 - Formulário ** 	|
+| **Caso de Teste** 	| **CT-07 - Formulário** 	|
 |	Requisito Associado 	| RF-007 - O sistema deve fornecer aos usuários a possibilidade de informar ao perfil administrativo por meio de uma TAG quaisquer informações relacionadas a avarias nos equipamentos e requisições adicionais ao software; O perfil administrativo terá uma aba de notificações com as mensagens recebidas separadas por TAGS |
 | Objetivo do Teste 	| Verificar se o formulário será enviado corretamente e se a mensagem chegará na caixa de entrada do Administrador |
 | Passos 	| - Acessar o navegador <br> - Informar o endereço do site <br> - Clicar em "Login" <br> - Preencher os campos obrigatórios (email e senha) <br> - Clicar em "Entrar" <br> - No canto inferior esquerdo, clicar em "AJUDA" <br> - Preencher o formulário e clicar em "Enviar" <br> - No perfil administrativo, clicar na aba de mensagens e verificar se chegou. |
