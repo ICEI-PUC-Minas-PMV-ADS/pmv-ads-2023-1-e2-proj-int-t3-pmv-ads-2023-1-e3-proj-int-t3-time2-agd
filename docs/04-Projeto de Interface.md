@@ -19,7 +19,16 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas d
 
 ## Wireframes
 
-![Exemplo de Wireframe](img/wireframe-example.png)
+O diagrama a seguir apresenta o fluxo de interação do usuário através das páginas do site. Acesso para o Wireframe interativo: https://marvelapp.com/prototype/76j7i97
+
+- Homepage Administrador
+
+![image](https://user-images.githubusercontent.com/114962362/230788232-f2638b82-a4b3-48ac-b4bf-381147428949.png)
+
+- Homepage Professor
+
+![image](https://user-images.githubusercontent.com/114962362/230788272-5831d7da-c927-4c94-9f6d-cabe6fbc79f9.png)
+
 
 São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
  
