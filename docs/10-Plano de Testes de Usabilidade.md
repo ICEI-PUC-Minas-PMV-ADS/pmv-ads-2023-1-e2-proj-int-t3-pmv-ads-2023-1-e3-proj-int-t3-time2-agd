@@ -35,7 +35,7 @@ Após concordar com o termo de responsabilidade, o funcionário voluntário irá
    | **Teste de agendamento** 	| **Análise** 	|
 |:---:	|:---:	| 
 | Objetivo do Teste | Verificar a criação de agendamento por parte do usuário  |
-| Passos 	| - Acessar o Sistema <br> - Preencher os campos obrigatórios do "Login" (email e senha) <br> - Clicar em "Entrar" <br> - Clicar em uma data e preencher os dados requistados <br> - Finalizar e conferir agendamento|
+| Passos 	| - Acessar o Sistema <br> - Preencher os campos obrigatórios do "Login" (email e senha) <br> - Clicar em "Entrar" <br> - Clicar em uma data e preencher os dados requistados ( Por exemplo: unidades de equipamentos, sala, turma, hora de início e término do agendamento )  <br> - Finalizar e conferir agendamento|
 | Informaçõe e métricas | Com a informação dada pelo relatório e o tempo contabilizado, será possível identificar se o sistema respondeu conforme desejado pelo usuario, possibilitando assim o analista gerar a  correlação entre feedback e tempo gasto para análise |
 
 
