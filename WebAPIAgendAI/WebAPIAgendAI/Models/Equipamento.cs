@@ -9,13 +9,15 @@ namespace WebAPIAgendAI.Models
     public class Equipamento
     {
         [Key]
-        [Required(ErrorMessage = "Obrigatório Informar o modelo!")]
+        [Required(ErrorMessage = "Campo Obrigatório!")]
         public int NumeroSerie { get; set; }
+        [Required(ErrorMessage = "Campo Obrigatório!")]
+        public string HostName { get; set; }
 
-        [Required(ErrorMessage = "Obrigatório Informar o modelo!")]
+        [Required(ErrorMessage = "Campo Obrigatório!")]
         public string Modelo { get; set; }
 
-        [Required(ErrorMessage = "Obrigatório Informar o status")]
+        [Required(ErrorMessage = "Campo Obrigatório!")]
         public StatusEquipamento Status { get; set; }
     }
 

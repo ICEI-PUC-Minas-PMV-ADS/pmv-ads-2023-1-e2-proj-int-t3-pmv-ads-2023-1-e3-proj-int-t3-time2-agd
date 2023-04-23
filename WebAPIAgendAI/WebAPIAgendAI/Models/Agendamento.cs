@@ -19,7 +19,9 @@ namespace WebAPIAgendAI.Models
         [Required(ErrorMessage = "Campo Obrigatório!")]
         public int Quantidade { get; set; }
 
-        [Display(Name ="Funcionario")]
+        [Required(ErrorMessage = "Campo Obrigatório!")]
+        public string Turma { get; set; }
+
         [Required(ErrorMessage = "Campo Obrigatório!")]
         [EmailAddress(ErrorMessage = "Entre com um email válido")]
         [DataType(DataType.EmailAddress)]
