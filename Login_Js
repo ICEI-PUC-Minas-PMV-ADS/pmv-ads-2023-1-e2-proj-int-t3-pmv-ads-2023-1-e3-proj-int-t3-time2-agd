@@ -1,0 +1,21 @@
+function Validacao(){
+
+    const emailValido = emailValido();
+    const senhaValida = senhaValida();
+
+    function emailValido(){
+      const email = document.getElementById("email").value;
+      if(!email){
+      return false;
+      }
+      return Validacao(email);
+  }
+
+  function senhaValida(){
+      const email = document.getElementById("senha").value;
+      if(!senha){
+      return false;
+      }
+      return Validacao(senha);
+    }
+}
