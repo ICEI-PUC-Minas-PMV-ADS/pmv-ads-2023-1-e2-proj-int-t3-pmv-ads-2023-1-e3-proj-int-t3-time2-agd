@@ -7614,24 +7614,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Joe Monteiro\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Lenovo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Joe Monteiro\\OneDrive\\Desktop\\Nova pasta (2)\\WebAPIAgendAI\\WebAPIAgendAI\\WebAPIAgendAI.csproj",
+      "projectUniqueName": "C:\\Users\\Lenovo\\Source\\Repos\\pmv-ads-2023-1-e2-proj-int-t3-pmv-ads-2023-1-e3-proj-int-t3-time2-agd\\WebAPIAgendAI\\WebAPIAgendAI\\WebAPIAgendAI.csproj",
       "projectName": "WebAPIAgendAI",
-      "projectPath": "C:\\Users\\Joe Monteiro\\OneDrive\\Desktop\\Nova pasta (2)\\WebAPIAgendAI\\WebAPIAgendAI\\WebAPIAgendAI.csproj",
-      "packagesPath": "C:\\Users\\Joe Monteiro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Joe Monteiro\\OneDrive\\Desktop\\Nova pasta (2)\\WebAPIAgendAI\\WebAPIAgendAI\\obj\\",
+      "projectPath": "C:\\Users\\Lenovo\\Source\\Repos\\pmv-ads-2023-1-e2-proj-int-t3-pmv-ads-2023-1-e3-proj-int-t3-time2-agd\\WebAPIAgendAI\\WebAPIAgendAI\\WebAPIAgendAI.csproj",
+      "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Lenovo\\Source\\Repos\\pmv-ads-2023-1-e2-proj-int-t3-pmv-ads-2023-1-e3-proj-int-t3-time2-agd\\WebAPIAgendAI\\WebAPIAgendAI\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Joe Monteiro\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7639,7 +7634,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -7722,7 +7716,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }
