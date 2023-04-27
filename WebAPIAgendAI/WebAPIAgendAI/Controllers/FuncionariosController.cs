@@ -16,13 +16,6 @@ namespace WebAPIAgendAI.Controllers
             _context = context;
         }
 
-        public  IActionResult Login()
-        {
-            return View();
-        }
-
-
-
         // GET: Funcionarios    
         public async Task<IActionResult> Index()
         {
