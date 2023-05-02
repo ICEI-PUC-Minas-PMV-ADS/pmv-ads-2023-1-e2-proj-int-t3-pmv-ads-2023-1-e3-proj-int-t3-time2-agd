@@ -1,14 +1,11 @@
-/*
-Inspired by http://dribbble.com/shots/917819-iPad-Calendar-Login?list=shots&sort=views&timeframe=ever&offset=461
-*/
 body {
     
 	display: table;
   width: 90%;
-  height: 90vh;
+  height: 100vh;
   padding: 90px 0;
   color: white;
-  background: url(https://lh3.googleusercontent.com/Pm_9mG6WrgdQXtaohb0PkZIaH5-RElQ88ExitsbFjuVEbhfeMExlgc8Bef1CgJWiYCfUsC0ONNJ7Rx8c43RKBckk2bM5JdIGU_eBVyJm);
+  background: url(https://i.ibb.co/C1ptnKB/escola-2-1.png	);
   background-position: 30% 25%;
   background-size: cover;
 }
@@ -30,8 +27,6 @@ button,input,optgroup,select,textarea {
 	background-color: #fff;
 	padding: 2rem;
 }
-
-
 
 input {
 	width: 100%;
