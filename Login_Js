@@ -1,21 +1,12 @@
-function Validacao(){
+function logar(){
 
-    const emailValido = emailValido();
-    const senhaValida = senhaValida();
-
-    function emailValido(){
-      const email = document.getElementById("email").value;
-      if(!email){
-      return false;
-      }
-      return Validacao(email);
-  }
-
-  function senhaValida(){
-      const email = document.getElementById("senha").value;
-      if(!senha){
-      return false;
-      }
-      return Validacao(senha);
+    var login = document.getElementById('login').value;
+    var senha = document.getElementById('senha').value;
+  
+    if(login == "admin" && senha == "admin"){
+        alert('Sucesso');
+        location.href = "http://127.0.0.1:5500/GPTteste/HomePage.html";
+    }else{
+        alert('Usuario ou senha incorretos');
     }
-}
+  }
