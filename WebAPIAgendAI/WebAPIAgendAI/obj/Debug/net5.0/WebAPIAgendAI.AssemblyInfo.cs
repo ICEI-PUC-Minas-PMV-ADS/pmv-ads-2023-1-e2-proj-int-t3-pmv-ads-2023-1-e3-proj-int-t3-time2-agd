@@ -11,6 +11,7 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("daae5a5e-b91e-4cd3-bbd7-09f6f54cf834")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebAPIAgendAI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
