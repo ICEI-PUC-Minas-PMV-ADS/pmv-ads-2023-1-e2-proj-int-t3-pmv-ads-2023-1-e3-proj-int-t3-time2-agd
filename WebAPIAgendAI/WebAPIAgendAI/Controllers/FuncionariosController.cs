@@ -1,13 +1,17 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using WebAPIAgendAI.Models;
 
 namespace WebAPIAgendAI.Controllers
 {
+    [Authorize (Roles ="Administrador")]
     public class FuncionariosController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -16,11 +20,69 @@ namespace WebAPIAgendAI.Controllers
             _context = context;
         }
 
+        [AllowAnonymous]
         public IActionResult Login()
         {
             return View();
         }
 
+        [HttpPost]
+        [AllowAnonymous]
+        public async Task<IActionResult> Login([Bind("Id,Senha,Perfil")] Funcionario funcionario)
+        {
+            var usuario = await _context.Funcionarios
+                .FirstOrDefaultAsync(m => m.Id == funcionario.Id);
+
+            if (usuario == null)
+            {
+                ViewBag.Message = "Funcionário e/ou Senha inválidos!";
+                return View();
+            }
+
+            bool isSenhaOk = BCrypt.Net.BCrypt.Verify(funcionario.Senha, usuario.Senha);
+            bool perfilOk = Equals(funcionario.Perfil, usuario.Perfil);
+
+            if (isSenhaOk && perfilOk)
+            {
+                var claims = new List<Claim>
+                {
+                    new Claim(ClaimTypes.Name, usuario.Nome),
+                    new Claim(ClaimTypes.NameIdentifier, usuario.Nome),
+                    new Claim(ClaimTypes.Role, usuario.Perfil.ToString())
+                };
+
+                var idUsuario = new ClaimsIdentity(claims, "login");
+
+                ClaimsPrincipal principal = new ClaimsPrincipal(idUsuario);
+
+                var propriedades = new AuthenticationProperties
+                {
+                    AllowRefresh = true,
+                    ExpiresUtc = DateTime.Now.ToLocalTime().AddDays(30),
+                    IsPersistent = true
+                };
+
+                await HttpContext.SignInAsync(principal, propriedades);
+
+                return Redirect("/");
+
+            }
+
+            ViewBag.Message = "Funcionário e/ou Senha inválidos!";
+            return View();
+        }
+        [AllowAnonymous]
+        public async Task<IActionResult> Logout()
+        {
+            await HttpContext.SignOutAsync();
+            return RedirectToAction("Login", "Funcionarios");
+        }
+
+        [AllowAnonymous]
+        public IActionResult AccessDenied()
+        {
+            return View();
+        }
         // GET: Funcionarios    
         public async Task<IActionResult> Index()
         {
@@ -57,10 +119,11 @@ namespace WebAPIAgendAI.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Nome,EmailInstitucional,Senha,Perfil")] Funcionario funcionario)
+        public async Task<IActionResult> Create([Bind("Id,Nome,EmailInstitucional,Senha,Perfil")] Funcionario funcionario)
         {
             if (ModelState.IsValid)
             {
+                funcionario.Senha = BCrypt.Net.BCrypt.HashPassword(funcionario.Senha);
                 _context.Add(funcionario);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -89,7 +152,7 @@ namespace WebAPIAgendAI.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Nome,EmailInstitucional,Senha,Perfil")] Funcionario funcionario)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,EmailInstitucional,Senha,Perfil")] Funcionario funcionario)
         {
             if (id != funcionario.Id)
             {
@@ -100,6 +163,7 @@ namespace WebAPIAgendAI.Controllers
             {
                 try
                 {
+                    funcionario.Senha = BCrypt.Net.BCrypt.HashPassword(funcionario.Senha);
                     _context.Update(funcionario);
                     await _context.SaveChangesAsync();
                 }

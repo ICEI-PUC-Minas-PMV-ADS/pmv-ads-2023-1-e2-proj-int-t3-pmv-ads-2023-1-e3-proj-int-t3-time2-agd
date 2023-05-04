@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -8,6 +9,7 @@ using WebAPIAgendAI.Models;
 
 namespace WebAPIAgendAI.Controllers
 {
+    [Authorize]
     public class AgendamentosController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -51,7 +53,7 @@ namespace WebAPIAgendAI.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Data,Quantidade,Turma,EmailInstitucional")] Agendamento agendamento)
+        public async Task<IActionResult> Create([Bind("Data,Quantidade,Turma,EmailInstitucional,FuncionarioId")] Agendamento agendamento)
         {
             if (ModelState.IsValid)
             {
@@ -83,7 +85,7 @@ namespace WebAPIAgendAI.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Data,Quantidade,Turma,EmailInstitucional")] Agendamento agendamento)
+        public async Task<IActionResult> Edit(int id, [Bind("Data,Quantidade,Turma,EmailInstitucional,FuncionarioId")] Agendamento agendamento)
         {
             if (id != agendamento.Id)
             {
@@ -113,6 +115,7 @@ namespace WebAPIAgendAI.Controllers
             return View(agendamento);
         }
 
+        [Authorize(Roles = "Administrador")]
         // GET: Agendamentos/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
@@ -130,7 +133,7 @@ namespace WebAPIAgendAI.Controllers
 
             return View(agendamento);
         }
-
+        [Authorize(Roles = "Administrador")]
         // POST: Agendamentos/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
