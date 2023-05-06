@@ -28,10 +28,10 @@ namespace WebAPIAgendAI.Controllers
 
         [HttpPost]
         [AllowAnonymous]
-        public async Task<IActionResult> Login([Bind("Id,Senha,Perfil")] Funcionario funcionario)
+        public async Task<IActionResult> Login([Bind("EmailInstitucional,Senha,Perfil")] Funcionario funcionario)
         {
             var usuario = await _context.Funcionarios
-                .FirstOrDefaultAsync(m => m.Id == funcionario.Id);
+                .FirstOrDefaultAsync(m => m.EmailInstitucional == funcionario.EmailInstitucional);
 
             if (usuario == null)
             {
