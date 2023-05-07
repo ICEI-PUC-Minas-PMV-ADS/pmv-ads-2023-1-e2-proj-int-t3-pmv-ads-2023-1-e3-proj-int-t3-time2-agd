@@ -1,6 +1,9 @@
 # Registro de Testes de Usabilidade
 
-*Vídeo do teste:
+Vídeo do teste:
+
+https://user-images.githubusercontent.com/115894941/236702745-91e67565-8700-47b0-94ad-56bf88afa927.mp4
+
 
 Os relatórios obtidos nos testes de software realizados são descritos abaixo.
 
@@ -39,6 +42,7 @@ Os relatórios obtidos nos testes de software realizados são descritos abaixo.
 
 
 > **Campos obrigatórios**
+
 > ![image](https://user-images.githubusercontent.com/114962362/236702147-48049458-4663-4ef9-b6ba-f7e7cd39ecd9.png)
 >> |RF-05 |
 >> - Necessária a inserção de e-mail insitucional e senha 
