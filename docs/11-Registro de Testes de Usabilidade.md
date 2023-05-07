@@ -7,7 +7,6 @@ Os relatórios obtidos nos testes de software realizados são descritos abaixo.
 ## Avaliação
 
 > **Login - Perfil Administrador**
-
 > ![image](https://user-images.githubusercontent.com/114962362/236701110-e95f1103-564d-47d6-a05b-d7a903721f76.png)
 >> |RF-01 |
 >> - Obrigatório e-mail institucional e senha para o perfil de administrador.
@@ -16,7 +15,6 @@ Os relatórios obtidos nos testes de software realizados são descritos abaixo.
 
 
 > **Homepage do perfil de administrador**
-
 > ![image](https://user-images.githubusercontent.com/114962362/236701362-9df19872-73cf-4035-bc7c-b8db461a7d0d.png)
 >> |RF-02 |
 >> - Acesso a barra de navegação do site.
@@ -25,7 +23,6 @@ Os relatórios obtidos nos testes de software realizados são descritos abaixo.
 
 
 > **Login - Perfil Professor**
-
 > ![image](https://user-images.githubusercontent.com/114962362/236701577-40e5e197-40ab-49e2-b2b0-d59baea83e1b.png)
 >> |RF-03 |
 >> - Obrigatórios senha e e-mail institucional para perfil de professor.
@@ -34,7 +31,6 @@ Os relatórios obtidos nos testes de software realizados são descritos abaixo.
 
 
 > **Homepage do perfil de professor**
-
 > ![image](https://user-images.githubusercontent.com/114962362/236702323-5655e35f-5f52-444e-9a86-7bc0d4253ab6.png)
 >> |RF-04 |
 >> - Acesso apenas a função "Agendamentos"
