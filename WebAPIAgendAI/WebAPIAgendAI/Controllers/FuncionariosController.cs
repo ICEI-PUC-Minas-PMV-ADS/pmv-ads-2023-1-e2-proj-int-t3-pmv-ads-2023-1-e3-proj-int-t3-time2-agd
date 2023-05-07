@@ -41,6 +41,11 @@ namespace WebAPIAgendAI.Controllers
 
             bool isSenhaOk = BCrypt.Net.BCrypt.Verify(funcionario.Senha, usuario.Senha);
             bool perfilOk = Equals(funcionario.Perfil, usuario.Perfil);
+            if (usuario.Perfil!= funcionario.Perfil)
+            {
+                ViewBag.Message = "Perfil inválido!";
+                return View();
+            }
 
             if (isSenhaOk && perfilOk)
             {
