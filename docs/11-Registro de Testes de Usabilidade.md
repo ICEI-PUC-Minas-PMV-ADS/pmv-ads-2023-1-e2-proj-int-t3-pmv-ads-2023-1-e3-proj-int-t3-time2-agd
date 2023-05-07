@@ -39,7 +39,6 @@ Os relatórios obtidos nos testes de software realizados são descritos abaixo.
 
 
 > **Campos obrigatórios**
-
 > ![image](https://user-images.githubusercontent.com/114962362/236702147-48049458-4663-4ef9-b6ba-f7e7cd39ecd9.png)
 >> |RF-05 |
 >> - Necessária a inserção de e-mail insitucional e senha 
