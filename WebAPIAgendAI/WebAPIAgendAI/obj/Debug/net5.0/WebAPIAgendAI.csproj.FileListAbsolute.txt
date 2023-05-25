@@ -1347,7 +1347,6 @@ C:\git\pmv-ads-2023-1-e2-proj-int-t3-pmv-ads-2023-1-e3-proj-int-t3-time2-agd\Web
 C:\git\pmv-ads-2023-1-e2-proj-int-t3-pmv-ads-2023-1-e3-proj-int-t3-time2-agd\WebAPIAgendAI\WebAPIAgendAI\bin\Debug\net5.0\WebAPIAgendAI.runtimeconfig.json
 C:\git\pmv-ads-2023-1-e2-proj-int-t3-pmv-ads-2023-1-e3-proj-int-t3-time2-agd\WebAPIAgendAI\WebAPIAgendAI\bin\Debug\net5.0\WebAPIAgendAI.runtimeconfig.dev.json
 C:\git\pmv-ads-2023-1-e2-proj-int-t3-pmv-ads-2023-1-e3-proj-int-t3-time2-agd\WebAPIAgendAI\WebAPIAgendAI\bin\Debug\net5.0\WebAPIAgendAI.dll
-C:\git\pmv-ads-2023-1-e2-proj-int-t3-pmv-ads-2023-1-e3-proj-int-t3-time2-agd\WebAPIAgendAI\WebAPIAgendAI\bin\Debug\net5.0\ref\WebAPIAgendAI.dll
 C:\git\pmv-ads-2023-1-e2-proj-int-t3-pmv-ads-2023-1-e3-proj-int-t3-time2-agd\WebAPIAgendAI\WebAPIAgendAI\bin\Debug\net5.0\WebAPIAgendAI.pdb
 C:\git\pmv-ads-2023-1-e2-proj-int-t3-pmv-ads-2023-1-e3-proj-int-t3-time2-agd\WebAPIAgendAI\WebAPIAgendAI\bin\Debug\net5.0\refs\Microsoft.AspNetCore.Antiforgery.dll
 C:\git\pmv-ads-2023-1-e2-proj-int-t3-pmv-ads-2023-1-e3-proj-int-t3-time2-agd\WebAPIAgendAI\WebAPIAgendAI\bin\Debug\net5.0\refs\Microsoft.AspNetCore.Authentication.Abstractions.dll
@@ -1752,7 +1751,6 @@ C:\git\pmv-ads-2023-1-e2-proj-int-t3-pmv-ads-2023-1-e3-proj-int-t3-time2-agd\Web
 C:\git\pmv-ads-2023-1-e2-proj-int-t3-pmv-ads-2023-1-e3-proj-int-t3-time2-agd\WebAPIAgendAI\WebAPIAgendAI\obj\Debug\net5.0\WebAPIAgendAI.RazorAssemblyInfo.cache
 C:\git\pmv-ads-2023-1-e2-proj-int-t3-pmv-ads-2023-1-e3-proj-int-t3-time2-agd\WebAPIAgendAI\WebAPIAgendAI\obj\Debug\net5.0\WebAPIAgendAI.RazorAssemblyInfo.cs
 C:\git\pmv-ads-2023-1-e2-proj-int-t3-pmv-ads-2023-1-e3-proj-int-t3-time2-agd\WebAPIAgendAI\WebAPIAgendAI\obj\Debug\net5.0\staticwebassets\WebAPIAgendAI.StaticWebAssets.Manifest.cache
-C:\git\pmv-ads-2023-1-e2-proj-int-t3-pmv-ads-2023-1-e3-proj-int-t3-time2-agd\WebAPIAgendAI\WebAPIAgendAI\obj\Debug\net5.0\staticwebassets\WebAPIAgendAI.StaticWebAssets.xml
 C:\git\pmv-ads-2023-1-e2-proj-int-t3-pmv-ads-2023-1-e3-proj-int-t3-time2-agd\WebAPIAgendAI\WebAPIAgendAI\obj\Debug\net5.0\scopedcss\bundle\WebAPIAgendAI.styles.css
 C:\git\pmv-ads-2023-1-e2-proj-int-t3-pmv-ads-2023-1-e3-proj-int-t3-time2-agd\WebAPIAgendAI\WebAPIAgendAI\obj\Debug\net5.0\WebAPIAgendAI.TagHelpers.input.cache
 C:\git\pmv-ads-2023-1-e2-proj-int-t3-pmv-ads-2023-1-e3-proj-int-t3-time2-agd\WebAPIAgendAI\WebAPIAgendAI\obj\Debug\net5.0\WebAPIAgendAI.TagHelpers.output.cache
@@ -2694,3 +2692,4 @@ C:\Users\Joe Monteiro\OneDrive\Desktop\Agendai_Front_Back\Agendai_Front_Back\Web
 C:\Users\Joe Monteiro\OneDrive\Desktop\Agendai_Front_Back\Agendai_Front_Back\WebAPIAgendAI\WebAPIAgendAI\obj\Debug\net5.0\WebAPIAgendAI.pdb
 C:\Users\Joe Monteiro\OneDrive\Desktop\Agendai_Front_Back\Agendai_Front_Back\WebAPIAgendAI\WebAPIAgendAI\obj\Debug\net5.0\WebAPIAgendAI.genruntimeconfig.cache
 C:\Users\Joe Monteiro\OneDrive\Desktop\Agendai_Front_Back\Agendai_Front_Back\WebAPIAgendAI\WebAPIAgendAI\obj\Debug\net5.0\ref\WebAPIAgendAI.dll
+C:\git\pmv-ads-2023-1-e2-proj-int-t3-pmv-ads-2023-1-e3-proj-int-t3-time2-agd\WebAPIAgendAI\WebAPIAgendAI\obj\Debug\net5.0\refint\WebAPIAgendAI.dll

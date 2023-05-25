@@ -53,7 +53,7 @@ namespace WebAPIAgendAI.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Data,Quantidade,Turma,EmailInstitucional,FuncionarioId")] Agendamento agendamento)
+        public async Task<IActionResult> Create([Bind("Data,Quantidade,Sala,EmailInstitucional,FuncionarioId,Tipo")] Agendamento agendamento)
         {
             if (ModelState.IsValid)
             {
@@ -85,7 +85,7 @@ namespace WebAPIAgendAI.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Data,Quantidade,Turma,EmailInstitucional,FuncionarioId")] Agendamento agendamento)
+        public async Task<IActionResult> Edit(int id, [Bind("Data,Quantidade,Sala,EmailInstitucional,FuncionarioId,Tipo")] Agendamento agendamento)
         {
             if (id != agendamento.Id)
             {
@@ -101,7 +101,7 @@ namespace WebAPIAgendAI.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!AgendamentoExists(id))
+                    if (!AgendamentoExists(agendamento.Id))
                     {
                         return NotFound();
                     }

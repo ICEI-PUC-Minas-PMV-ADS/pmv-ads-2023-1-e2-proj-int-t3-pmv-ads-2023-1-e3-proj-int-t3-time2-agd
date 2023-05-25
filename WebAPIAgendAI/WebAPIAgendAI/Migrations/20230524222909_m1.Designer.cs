@@ -10,8 +10,8 @@ using WebAPIAgendAI.Models;
 namespace WebAPIAgendAI.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230501224247_m01")]
-    partial class m01
+    [Migration("20230524222909_m1")]
+    partial class m1
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -41,9 +41,12 @@ namespace WebAPIAgendAI.Migrations
                     b.Property<int>("Quantidade")
                         .HasColumnType("int");
 
-                    b.Property<string>("Turma")
+                    b.Property<string>("Sala")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Tipo")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 

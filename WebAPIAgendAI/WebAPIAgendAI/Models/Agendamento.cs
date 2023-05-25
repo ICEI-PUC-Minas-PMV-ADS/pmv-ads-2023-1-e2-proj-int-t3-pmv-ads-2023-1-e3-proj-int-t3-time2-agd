@@ -17,7 +17,7 @@ namespace WebAPIAgendAI.Models
         public int Quantidade { get; set; }
 
         [Required(ErrorMessage = "Campo Obrigatório!")]
-        public string Turma { get; set; }
+        public string Sala { get; set; }
 
         [Required(ErrorMessage = "Campo Obrigatório!")]
         [EmailAddress(ErrorMessage = "Entre com um email válido")]
@@ -28,5 +28,15 @@ namespace WebAPIAgendAI.Models
         [ForeignKey("FuncionarioId")]
         public Funcionario Funcionario { get; set; }
 
+        [Required(ErrorMessage = "Campo Obrigatório!")]
+        public Tipo Tipo { get; set; }
+
+    }
+    public enum Tipo
+    {
+        Evento,
+        Aula,
+        Prova,
+        Atualizacao
     }
 }

@@ -188,11 +188,6 @@ namespace WebAPIAgendAI.Controllers
             return View(funcionario);
         }
 
-        private bool FuncionarioExists(object id)
-        {
-            throw new NotImplementedException();
-        }
-
         // GET: Funcionarios/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {

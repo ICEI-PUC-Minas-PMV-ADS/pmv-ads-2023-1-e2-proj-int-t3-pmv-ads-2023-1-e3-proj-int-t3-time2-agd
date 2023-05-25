@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace WebAPIAgendAI.Migrations
 {
-    public partial class m01 : Migration
+    public partial class m1 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -46,9 +46,10 @@ namespace WebAPIAgendAI.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Data = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Quantidade = table.Column<int>(type: "int", nullable: false),
-                    Turma = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Sala = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     EmailInstitucional = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    FuncionarioId = table.Column<int>(type: "int", nullable: false)
+                    FuncionarioId = table.Column<int>(type: "int", nullable: false),
+                    Tipo = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
