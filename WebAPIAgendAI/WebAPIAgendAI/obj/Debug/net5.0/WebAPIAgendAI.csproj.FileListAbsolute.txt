@@ -1755,7 +1755,6 @@ C:\git\pmv-ads-2023-1-e2-proj-int-t3-pmv-ads-2023-1-e3-proj-int-t3-time2-agd\Web
 C:\git\pmv-ads-2023-1-e2-proj-int-t3-pmv-ads-2023-1-e3-proj-int-t3-time2-agd\WebAPIAgendAI\WebAPIAgendAI\obj\Debug\net5.0\WebAPIAgendAI.TagHelpers.input.cache
 C:\git\pmv-ads-2023-1-e2-proj-int-t3-pmv-ads-2023-1-e3-proj-int-t3-time2-agd\WebAPIAgendAI\WebAPIAgendAI\obj\Debug\net5.0\WebAPIAgendAI.TagHelpers.output.cache
 C:\git\pmv-ads-2023-1-e2-proj-int-t3-pmv-ads-2023-1-e3-proj-int-t3-time2-agd\WebAPIAgendAI\WebAPIAgendAI\obj\Debug\net5.0\WebAPIAgendAI.RazorCoreGenerate.cache
-C:\git\pmv-ads-2023-1-e2-proj-int-t3-pmv-ads-2023-1-e3-proj-int-t3-time2-agd\WebAPIAgendAI\WebAPIAgendAI\obj\Debug\net5.0\Razor\Views\Agendamentos\Create.cshtml.g.cs
 C:\git\pmv-ads-2023-1-e2-proj-int-t3-pmv-ads-2023-1-e3-proj-int-t3-time2-agd\WebAPIAgendAI\WebAPIAgendAI\obj\Debug\net5.0\Razor\Views\Agendamentos\Delete.cshtml.g.cs
 C:\git\pmv-ads-2023-1-e2-proj-int-t3-pmv-ads-2023-1-e3-proj-int-t3-time2-agd\WebAPIAgendAI\WebAPIAgendAI\obj\Debug\net5.0\Razor\Views\Agendamentos\Details.cshtml.g.cs
 C:\git\pmv-ads-2023-1-e2-proj-int-t3-pmv-ads-2023-1-e3-proj-int-t3-time2-agd\WebAPIAgendAI\WebAPIAgendAI\obj\Debug\net5.0\Razor\Views\Agendamentos\Edit.cshtml.g.cs
@@ -2694,3 +2693,5 @@ C:\Users\Joe Monteiro\OneDrive\Desktop\Agendai_Front_Back\Agendai_Front_Back\Web
 C:\Users\Joe Monteiro\OneDrive\Desktop\Agendai_Front_Back\Agendai_Front_Back\WebAPIAgendAI\WebAPIAgendAI\obj\Debug\net5.0\ref\WebAPIAgendAI.dll
 C:\git\pmv-ads-2023-1-e2-proj-int-t3-pmv-ads-2023-1-e3-proj-int-t3-time2-agd\WebAPIAgendAI\WebAPIAgendAI\bin\Debug\net5.0\ref\WebAPIAgendAI.dll
 C:\git\pmv-ads-2023-1-e2-proj-int-t3-pmv-ads-2023-1-e3-proj-int-t3-time2-agd\WebAPIAgendAI\WebAPIAgendAI\obj\Debug\net5.0\staticwebassets\WebAPIAgendAI.StaticWebAssets.xml
+C:\git\pmv-ads-2023-1-e2-proj-int-t3-pmv-ads-2023-1-e3-proj-int-t3-time2-agd\WebAPIAgendAI\WebAPIAgendAI\obj\Debug\net5.0\Razor\Views\Agendamentos\CreateAgendamento.cshtml.g.cs
+C:\git\pmv-ads-2023-1-e2-proj-int-t3-pmv-ads-2023-1-e3-proj-int-t3-time2-agd\WebAPIAgendAI\WebAPIAgendAI\obj\Debug\net5.0\Razor\Views\Agendamentos\ListaAgendamento.cshtml.g.cs

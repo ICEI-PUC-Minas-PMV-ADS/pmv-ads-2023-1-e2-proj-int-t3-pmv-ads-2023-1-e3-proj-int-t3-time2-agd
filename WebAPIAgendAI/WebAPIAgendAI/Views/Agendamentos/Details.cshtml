@@ -3,7 +3,6 @@
 @{
     ViewData["Title"] = "Details";
 }
-
 <div>
     <h4>Informações do Agendamento</h4>
     <hr />
@@ -26,12 +25,12 @@
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.EmailInstitucional)
         </dd>
-        @*<dt class="col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.FuncionarioId)
-        </dt>*@
-        @*<dd class="col-sm-10">
+        </dt>
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.FuncionarioId)
-        </dd>*@
+        </dd>
         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Tipo)
         </dt>
@@ -40,6 +39,6 @@
         </dd>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model.Id">Editar</a> |
+    <a asp-action="Edit" asp-route-id="@Model.Id">Editar</a> 
     <a asp-action="Index">Voltar</a>
 </div>

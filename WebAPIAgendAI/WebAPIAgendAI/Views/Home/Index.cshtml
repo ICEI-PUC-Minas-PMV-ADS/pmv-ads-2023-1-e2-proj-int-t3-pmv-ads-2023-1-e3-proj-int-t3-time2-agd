@@ -1,105 +1,116 @@
-﻿
+﻿@model WebAPIAgendAI.Models.Agendamento
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>AgendAi HomePage</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css " 
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css " />
     <link rel="stylesheet" href="css/homepage.css" />
-    
 
-  </head>
-  <body>  
+</head>
+<body>
     <div id="app">
-      <!-- HEADER -->
-      <header>
+        <!-- HEADER -->
+        <header>
+            <div class="wrapper">
+                <div class="monthyear">
+                    <div class="c-month">
+                        <span id="prev"
+                              class="prev fa fa-angle-left"
+                              aria-hidden="true"></span>
+                        <div id="navigation">
+                            <span class="o-btn" id="showMonths"></span>
+                            <span class="o-btn" id="showYears"></span>
+                        </div>
+                        <span id="next"
+                              class="next fa fa-angle-right"
+                              aria-hidden="true"></span>
+                    </div>
+                    <span class="navigation-monthyear"></span>
+                </div>
+                <div>
+                    <a class="o-btn" href="javascript:;" id="today">HOJE</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- WRAPPER -->
         <div class="wrapper">
-          <div class="monthyear">
-            <div class="c-month">
-              <span
-                id="prev"
-                class="prev fa fa-angle-left"
-                aria-hidden="true"
-              ></span>
-              <div id="navigation">
-                <span class="o-btn" id="showMonths"></span>
-                <span class="o-btn" id="showYears"></span>
-              </div>
-              <span
-                id="next"
-                class="next fa fa-angle-right"
-                aria-hidden="true"
-              ></span>
+            <div class="c-calendar">
+                <!-- EVENT SIDEBAR -->
+                <div class="calendar-style side-bar">
+                    <a id="addEvent" class="o-btn" href="javascript:;">
+                        Novo Agendamento <span class="fa fa-plus"></span>
+                    </a>
+                    <div class="side-info">
+                        <span class="side-info-num"></span>
+                        <span class="side-info-month"></span>
+                        <span class="side-info-num"></span>
+                    </div>
+                    <div id="eventList">
+
+                    </div>
+                </div>
+
+                <!-- CALENDAR -->
+                <div id="calendar" class="calendar calendar-style"></div>
+                <div class="months calendar-style"></div>
+                <div class="years calendar-style"></div>
             </div>
-            <span class="navigation-monthyear"></span>
-          </div>
-          <div>
-            <a class="o-btn" href="javascript:;" id="today">HOJE</a>
-          </div>
-        </div>
-      </header>
 
-      <!-- WRAPPER -->
-      <div class="wrapper">
-        <div class="c-calendar">
-          <!-- EVENT SIDEBAR -->
-          <div class="calendar-style side-bar">
-            <a id="addEvent" class="o-btn" href="javascript:;"
-              >Add event <span class="fa fa-plus"></span
-            ></a>
-            <div class="side-info">
-              <span class="side-info-num"></span>
-              <span class="side-info-month"></span>
-              <span class="side-info-num"></span>
+            <!-- MODAL WINDOW -->
+            <div id="eventPopup" class="event-modal calendar-style">
+                <a id="closePopup" href="javascript:;" class="o-btn">
+                    CLOSE <span class="fa fa-close"></span>
+                </a>
+                <form asp-action="CreateAgendamento">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="Data" class="control-label"></label>
+                        <input asp-for="Data" class="form-control" />
+                        <span asp-validation-for="Data" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Quantidade" class="control-label"></label>
+                        <input asp-for="Quantidade" class="form-control">
+                        <span asp-validation-for="Quantidade" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Sala" class="control-label"></label>
+                        <input asp-for="Sala" class="form-control">
+                        <span asp-validation-for="Sala" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="EmailInstitucional" class="control-label"></label>
+                        <input asp-for="EmailInstitucional" class="form-control">
+                        <span asp-validation-for="EmailInstitucional" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="FuncionarioId" class="control-label"></label>
+                        <input asp-for="FuncionarioId" class="form-control">
+                        <span asp-validation-for="FuncionarioId" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Tipo" class="control-label"></label>
+                        <select asp-for="Tipo" class="form-control" asp-items=" Html.GetEnumSelectList<Tipo>()"></select>
+                        <span asp-validation-for="Tipo" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Agendar" class="btn btn-primary" />
+                    </div>
+                </form>
             </div>
-            <div id="eventList"></div>
-          </div>
-
-          <!-- CALENDAR -->
-          <div id="calendar" class="calendar calendar-style"></div>
-          <div class="months calendar-style"></div>
-          <div class="years calendar-style"></div>
         </div>
-
-        <!-- MODAL WINDOW -->
-        <div id="eventPopup" class="event-modal calendar-style">
-          <a id="closePopup" href="javascript:;" class="o-btn"
-            >CLOSE <span class="fa fa-close"></span
-          ></a>
-          <form id="addEvent">
-            <input placeholder="Nome" type="text" name="name" />
-            <input placeholder="Email" type="email" name="Email"  required/>
-            <input type="date" name="date" />
-            <input placeholder="Sala" type="text" name="Sala"  /> 
-            <input placeholder="Quantidade" type="number" name="Quantidade" />        
-            <select name="tag">
-              <option value="Aula">Aula</option>
-              <option value="Evento">Evento</option>
-              <option value="Prova">Prova</option>
-              <option value="Atualizacao">Atualização</option>
-            </select>    
-          </form>
-          <br />
-          <a
-            href="javascript:;"
-            style="float: right"
-            id="storeEvent"
-            class="o-btn"
-            >SAVE <span class="fa fa-save"></span
-          ></a>
-        </div>
-      </div>
     </div>
 
     <!-- JS -->
-    
-  </body>
-    <script src="js/site.js"></script>
+
+</body>
+<script src="js/site.js"></script>
 </html>
 
 

@@ -44,7 +44,6 @@ namespace WebAPIAgendAI.Controllers
             return View(equipamento);
         }
 
-
         // GET: Equipamentos/Create
         public IActionResult Create()
         {

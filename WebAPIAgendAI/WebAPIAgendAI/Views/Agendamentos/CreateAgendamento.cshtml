@@ -1,14 +1,14 @@
 ﻿@model WebAPIAgendAI.Models.Agendamento
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "CreateAgendamento";
 }
 
 <h4>Agendamento</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Create">
+        <form asp-action="CreateAgendamento">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="Data" class="control-label"></label>
@@ -17,22 +17,22 @@
             </div>
             <div class="form-group">
                 <label asp-for="Quantidade" class="control-label"></label>
-                <input asp-for="Quantidade" class="form-control"></input>
+                <input asp-for="Quantidade" class="form-control">
                 <span asp-validation-for="Quantidade" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Sala" class="control-label"></label>
-                <input asp-for="Sala" class="form-control"></input>
+                <input asp-for="Sala" class="form-control">
                 <span asp-validation-for="Sala" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="EmailInstitucional" class="control-label"></label>
-                <input asp-for="EmailInstitucional" class="form-control"></input>
+                <input asp-for="EmailInstitucional" class="form-control">
                 <span asp-validation-for="EmailInstitucional" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="FuncionarioId" class="control-label"></label>
-                <input asp-for="FuncionarioId" class="form-control"></input>
+                <input asp-for="FuncionarioId" class="form-control">
                 <span asp-validation-for="FuncionarioId" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -48,7 +48,7 @@
 </div>
 
 <div>
-    <a asp-action="Index">Voltar</a>
+    <a asp-action="Index">Lista de Agendamentos</a>
 </div>
 
 @section Scripts {

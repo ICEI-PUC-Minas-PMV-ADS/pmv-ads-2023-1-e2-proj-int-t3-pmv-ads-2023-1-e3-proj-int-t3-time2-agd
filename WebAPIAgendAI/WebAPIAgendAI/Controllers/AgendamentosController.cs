@@ -1,8 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using WebAPIAgendAI.Models;
@@ -17,8 +15,14 @@ namespace WebAPIAgendAI.Controllers
         {
             _context = context;
         }
+        [Authorize(Roles = "Administrador")]
         // GET: Agendamentos
         public async Task<IActionResult> Index()
+        {
+            return View(await _context.Agendamentos.ToListAsync());
+        }
+
+        public async Task<IActionResult> ListaAgendamento()
         {
             return View(await _context.Agendamentos.ToListAsync());
         }
@@ -40,9 +44,9 @@ namespace WebAPIAgendAI.Controllers
 
             return View(agendamento);
         }
-
+        [Authorize(Roles = "Administrador")]
         // GET: Agendamentos/Create
-        public IActionResult Create()
+        public IActionResult CreateAgendamento()
         {
             return View();
         }
@@ -51,9 +55,10 @@ namespace WebAPIAgendAI.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
 
+        [Authorize(Roles = "Administrador")]
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Data,Quantidade,Sala,EmailInstitucional,FuncionarioId,Tipo")] Agendamento agendamento)
+        public async Task<IActionResult> CreateAgendamento([Bind("Data,Quantidade,Sala,EmailInstitucional,FuncionarioId,Tipo")] Agendamento agendamento)
         {
             if (ModelState.IsValid)
             {
@@ -79,7 +84,7 @@ namespace WebAPIAgendAI.Controllers
             }
             return View(agendamento);
         }
-
+        
         // POST: Agendamentos/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
@@ -144,7 +149,7 @@ namespace WebAPIAgendAI.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-
+        
         private bool AgendamentoExists(int id)
         {
             return _context.Agendamentos.Any(e => e.Id == id);
