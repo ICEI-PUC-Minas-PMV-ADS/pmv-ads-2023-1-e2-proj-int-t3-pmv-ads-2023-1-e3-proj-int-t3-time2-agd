@@ -11,15 +11,16 @@ using WebAPIAgendAI.Models;
 
 namespace WebAPIAgendAI.Controllers
 {
-    [Authorize (Roles ="Administrador")]
+    //[Authorize (Roles ="Administrador")]
     public class FuncionariosController : Controller
     {
         private readonly ApplicationDbContext _context;
+        private readonly int _id;
         public FuncionariosController(ApplicationDbContext context)
         {
             _context = context;
         }
-
+       
         [AllowAnonymous]
         public IActionResult Login()
         {
@@ -32,7 +33,7 @@ namespace WebAPIAgendAI.Controllers
         {
             var usuario = await _context.Funcionarios
                 .FirstOrDefaultAsync(m => m.EmailInstitucional == funcionario.EmailInstitucional);
-
+            var idUser = usuario.Id;
             if (usuario == null)
             {
                 ViewBag.Message = "Funcionário e/ou Senha inválidos!";
@@ -93,7 +94,7 @@ namespace WebAPIAgendAI.Controllers
         {
             return View(await _context.Funcionarios.ToListAsync());
         }
-
+        
         // GET: Funcionarios/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -111,7 +112,25 @@ namespace WebAPIAgendAI.Controllers
 
             return View(funcionario);
         }
+        [Authorize]
+        public async Task<IActionResult> Agendamentos(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
 
+            var funcionario = await _context.Funcionarios
+                 .Include(t => t.Agendamentos)
+                .FirstOrDefaultAsync(m => m.Id == id);
+
+            if (funcionario == null)
+            {
+                return NotFound();
+            }
+
+            return View(funcionario);
+        }
         // GET: Funcionarios/Create
         public IActionResult Create()
         {

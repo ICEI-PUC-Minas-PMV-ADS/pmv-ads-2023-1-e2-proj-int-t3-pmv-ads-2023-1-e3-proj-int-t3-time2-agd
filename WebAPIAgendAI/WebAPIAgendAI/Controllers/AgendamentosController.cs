@@ -15,7 +15,7 @@ namespace WebAPIAgendAI.Controllers
         {
             _context = context;
         }
-        [Authorize(Roles = "Administrador")]
+        //[Authorize(Roles = "Administrador")]
         // GET: Agendamentos
         public async Task<IActionResult> Index()
         {
@@ -44,7 +44,7 @@ namespace WebAPIAgendAI.Controllers
 
             return View(agendamento);
         }
-        [Authorize(Roles = "Administrador")]
+        //[Authorize(Roles = "Administrador")]
         // GET: Agendamentos/Create
         public IActionResult CreateAgendamento()
         {
@@ -55,7 +55,7 @@ namespace WebAPIAgendAI.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
 
-        [Authorize(Roles = "Administrador")]
+        //[Authorize(Roles = "Administrador")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> CreateAgendamento([Bind("Data,Quantidade,Sala,EmailInstitucional,FuncionarioId,Tipo")] Agendamento agendamento)
@@ -120,7 +120,7 @@ namespace WebAPIAgendAI.Controllers
             return View(agendamento);
         }
 
-        [Authorize(Roles = "Administrador")]
+        //[Authorize(Roles = "Administrador")]
         // GET: Agendamentos/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
@@ -138,7 +138,7 @@ namespace WebAPIAgendAI.Controllers
 
             return View(agendamento);
         }
-        [Authorize(Roles = "Administrador")]
+        //[Authorize(Roles = "Administrador")]
         // POST: Agendamentos/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
@@ -149,7 +149,7 @@ namespace WebAPIAgendAI.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-        
+
         private bool AgendamentoExists(int id)
         {
             return _context.Agendamentos.Any(e => e.Id == id);

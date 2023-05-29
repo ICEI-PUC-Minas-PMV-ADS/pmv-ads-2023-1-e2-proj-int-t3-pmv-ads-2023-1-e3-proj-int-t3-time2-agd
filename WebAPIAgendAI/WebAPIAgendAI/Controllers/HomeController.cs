@@ -55,27 +55,7 @@ namespace WebAPIAgendAI.Controllers
             }
             return View(agendamento);
         }
-        [Authorize]
-        // GET: Home/ListaAgendamento/5
-        [HttpGet, ActionName("ListaAgendamento")]
-        [ValidateAntiForgeryToken]
-        //public async Task<IActionResult> ListaAgendamento(int id, Funcionario funcionario, Agendamento agendamento)
-        //{
-        ////    if (funcionario.EmailInstitucional == null)
-        ////    {
-        ////        return View(await _context.Agendamentos.ToListAsync());
-        ////    }
-
-        ////    if (funcionario.EmailInstitucional == agendamento.EmailInstitucional)
-        ////    {
-
-        ////        return View(await _context.Agendamentos.Where(o => o.Id == id).ToListAsync());
-
-        ////    }
-
-        //    return View(await _context.Agendamentos.ToListAsync());
-        //}
-
+        
         public async Task<IActionResult> ListaAgendamento()
         {
             return View(await _context.Agendamentos.ToListAsync());
