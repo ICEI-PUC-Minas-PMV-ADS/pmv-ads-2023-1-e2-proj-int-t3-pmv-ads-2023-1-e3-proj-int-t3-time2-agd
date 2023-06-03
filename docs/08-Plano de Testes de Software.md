@@ -28,6 +28,7 @@ Cenários de testes utilizados na realização dos testes da aplicação AgendAI
 | Objetivo do Teste 	| Verificar se fez o agendamento corretamente. |
 | Passos 	| - Acessar a aplicação <br> - Informar o endereço do site <br> - Selecionar o perfil desejado (admininstrador ou professor) <br> - Preencher os campos obrigatórios (e-mail e senha) <br> - Clicar em "Entrar" <br> - Clicar em "Novo agendamento" <br> - Selecionar a data e hora desejada para o agendamento, dentro da faixa de disponibilidade <br> - Digitar a quantidade desejada <br> - Digitar o nº da sala de reserva do agendamento <br> - Digitar o e-mail institucional <br> - Digitar o ID do funcionário <br> - Selecionar o tipo do evento (aula, prova ou atualização) <br> - Clicar em "Agendar" <br> |
 |Critério de Êxito | - O agendamento foi realizado com sucesso. |
+|  	|  	|
 | Caso de Teste 	| **CT-05 - Controle de Horário** 	|
 |	Requisito Associado 	| RF-005 - 	O sistema deve possuir uma condição de controle de horário do empréstimo para evitar a interseção de agendamentos por parte dos usuários |
 | Objetivo do Teste 	| Verificar se o sistema vai impedir o "usuário 1" de alugar o mesmo equipamento no mesmo horário que o "usuário 2" alugou.  |
