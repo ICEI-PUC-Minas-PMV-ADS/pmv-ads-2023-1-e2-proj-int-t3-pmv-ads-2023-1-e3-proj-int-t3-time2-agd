@@ -31,7 +31,7 @@ Cenários de testes utilizados na realização dos testes da aplicação AgendAI
 |  	|  	|
 | Caso de Teste 	| **CT-05 - Controle de Horário** 	|
 |	Requisito Associado 	| RF-005 - 	O sistema deve possuir uma condição de controle de horário do empréstimo para evitar a interseção de agendamentos por parte dos usuários |
-| Objetivo do Teste 	| Verificar se o sistema vai impedir o "usuário 1" de alugar o mesmo equipamento no mesmo horário que o "usuário 2" alugou.  |
+| Objetivo do Teste 	| Verificar se o sistema vai impedir o "usuário 1" de agendar o mesmo equipamento no mesmo horário que o "usuário 2" agendou.  |
 | Passos 	| - Acessar a aplicação <br> - Informar o endereço do site <br> - Selecionar o perfil desejado (admininstrador ou professor) <br> - Preencher os campos obrigatórios (e-mail e senha) <br> - Clicar em "Entrar" <br> - Clicar em "Novo agendamento" <br> - Selecionar a data e hora desejada para o agendamento, dentro da faixa de disponibilidade <br> - Digitar a quantidade desejada <br> - Digitar o nº da sala de reserva do agendamento <br> - Digitar o e-mail institucional <br> - Digitar o ID do funcionário <br> - Selecionar o tipo do evento (aula, prova ou atualização) <br> - Clicar em "Agendar" <br> - Após preencher os pré requisitos necessário da aplicação, repetir o processo de agendamento com as credenciais de outro professor, no mesmo dia e horário, selecionando o mesmo equipamento <br> - Uma mensagem deve aparecer alertando o usuário sobre o erro <br> |
 |Critério de Êxito | - Indisponível. |
 |  	|  	|
@@ -44,7 +44,7 @@ Cenários de testes utilizados na realização dos testes da aplicação AgendAI
 | Caso de Teste 	| **CT-07 – Editar Agendamentos** 	|
 |Requisito Associado | RF-010	- O sistema deve permitir que o administrador edite os agendamentos |
 | Objetivo do Teste 	| Alterar dados no agendamento, caso seja necessário. |
-| Passos 	| -  Selecionar a data e hora desejada para o agendamento, dentro da faixa de disponibilidade <br> - Digitar a quantidade desejada <br> - Digitar o nº da sala de reserva do agendamento <br> - Digitar o e-mail institucional <br> - Digitar o ID do funcionário <br> - Selecionar o tipo do evento (aula, prova ou atualização) - Clicar em "salvar" |
+| Passos 	| -  Selecionar a data e hora desejada para o agendamento, dentro da faixa de disponibilidade <br> - Digitar a quantidade desejada <br> - Digitar o nº da sala de reserva do agendamento <br> - Digitar o e-mail institucional <br> - Digitar o ID do funcionário <br> - Selecionar o tipo do evento (aula, prova ou atualização) <br> - Clicar em "salvar" |
 |Critério de Êxito | - A edicação foi realizada com sucesso. |
 |  	|  	|
 | Caso de Teste 	| **CT-10 – Restrição de agendamento** 	|
