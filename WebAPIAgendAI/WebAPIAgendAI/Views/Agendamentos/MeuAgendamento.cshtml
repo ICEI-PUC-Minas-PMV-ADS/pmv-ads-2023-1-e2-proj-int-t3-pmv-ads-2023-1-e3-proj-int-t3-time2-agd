@@ -1,48 +1,51 @@
 ﻿@model WebAPIAgendAI.Models.Funcionario
 
 @{ ViewData["Title"] = "Meus Agendamentos"; }
-
+<link rel=" stylesheet" href="~/css/agendamento.css" />
 
 
 <div>
     <h4>Meus Agendamentos</h4>
-    <table class="table">
-        <thead>
-            <tr>
-                <th>
-                    Data
-                </th>
-                <th>
-                    Quantidade
-                </th>
-                <th>
-                    Sala
-                </th>
-                <th>
-                    Tipo
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model.Agendamentos.OrderByDescending(c => c.Data))
-            {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Data)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Quantidade)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Sala)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Tipo)
-                </td>
-                <td>
-                    <a asp-action="Details" asp-route-id="@item.Id">Informações</a>
-                </td>
-            </tr>}
-        </tbody>
-    </table>
+    <div class="bloco">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        Data
+                    </th>
+                    <th>
+                        Quantidade
+                    </th>
+                    <th>
+                        Sala
+                    </th>
+                    <th>
+                        Tipo
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Agendamentos.OrderByDescending(c => c.Data))
+                {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Data)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Quantidade)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sala)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tipo)
+        </td>
+        <td>
+            <a asp-action="Details" asp-route-id="@item.Id">Informações</a>
+        </td>
+    </tr>
+}
+            </tbody>
+        </table>
+    </div>
 </div>

@@ -32,21 +32,21 @@ let previousMonthOffset; // = offset - 1;
 let nextMonthOffset; //= 42 - previousMonthOffset - currentMonthDays;
 let selectedDay = null;
 
-//-----> Teste
+//-----> Testing
 const testDate = _ => {
     const idDay = day < 10 ? `0${day}` : day;
     const idMonth = month < 10 ? `0${month}` : month;
     return `${year}-${idMonth}-${idDay}`;
 };
 const events = [
-    { name: "Kaliane", date: testDate(), email: "Kaliane@AgendAI", tag: "Aula" },
-    { name: "Victor", date: testDate(), email: "Victor@AgendAI", tag: "Prova" },
-    { name: "Thais", date: testDate(), email: "Thais@AgendAI", tag: "Atualizacao" },
-    { name: "Thiago", date: testDate(), email: "Thiago@AgendAI", tag: "Evento" }
+    { name: "Kaliane", email: "Kaliane@AgendAI", date: testDate(), sala: "021", Quantidade: "9", tag: "event" },
+    { name: "Victor", email: "Victor@AgendAI", date: testDate(), sala: "204", Quantidade: "9", tag: "Prova" },
+    { name: "Thais", email: "Thais@AgendAI", date: testDate(), sala: "605", Quantidade: "8", tag: "Atualizacao" },
+    { name: "Joe", email: "Joe@AgendAI", date: testDate(), sala: "21", Quantidade: "4", tag: "Evento" }
 ];
-//----> Fim do teste
+//----> End testing
 
-// Seletores basicos para DOM
+// Basic selectors for DOM
 const calendarContainer = document.querySelector(".calendar");
 const monthsList = document.querySelector(".months");
 const yearsList = document.querySelector(".years");
@@ -183,16 +183,19 @@ const listEventsForSelectedDay = _ => {
                         break;
 
                     default:
-                        eventNode.classList.add("side-bar-Aula");
+                        eventNode.classList.add("side-bar-event");
                         break;
                 }
-                eventNode.innerHTML = `${event.name} <span> • 
-        ${event.email} 
-        • ${event.date}  •${event.Sala}  •${event.Quantidade}</span>`;
+                eventNode.innerHTML = `• Nome: ${event.name} <br> • 
+      Email: ${event.email} 
+      <br>• Data: ${event.date} <br> • Sala: ${event.sala} <br>•  Quantidade: ${event.Quantidade}`;
                 eventList.appendChild(eventNode);
             });
 
-        // Tipo do uso
+
+
+
+        // Attach event sign to days
         const days = document.getElementsByClassName("current-month-day");
         [...days].forEach(day => {
             events.forEach(event => {
@@ -213,7 +216,7 @@ const listEventsForSelectedDay = _ => {
                             break;
 
                         default:
-                            eventNode.classList.add("Aula");
+                            eventNode.classList.add("event");
                             break;
                     }
                     day.appendChild(eventNode);
@@ -224,8 +227,8 @@ const listEventsForSelectedDay = _ => {
 };
 
 const createCalendar = _ => {
-    // Dias da semana
-    const weekDays = ["SEG", "TER", "QUA", "QUI", "SEX", "SAB", "DOM"];
+    // Week days
+    const weekDays = ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"];
     weekDays.forEach((element, index) => {
         const weekDay = document.createElement("div");
         const weekDayName = document.createElement("p");
@@ -238,7 +241,7 @@ const createCalendar = _ => {
         calendarContainer.appendChild(weekDay);
     });
 
-    // previw mes
+    // Previous month
     if (previousMonthOffset > 0) {
         let previousMonthDayNumOffset = previousMonthOffset;
         for (let i = 0; i < previousMonthOffset; i++) {
@@ -256,7 +259,7 @@ const createCalendar = _ => {
         }
     }
 
-
+    // Current month
     for (let i = offset; i < currentMonthDays + offset; i++) {
         const calendarDay = document.createElement("div");
         const calendarDayNumber = document.createElement("p");
@@ -269,7 +272,7 @@ const createCalendar = _ => {
             year == new Date().getFullYear() &&
             month == new Date().getMonth() + 1
         ) {
-
+            // Current date
             calendarDay.classList.add("current-month-day");
             if (selectedDay === null) {
                 const selected = document.getElementsByClassName("isSelected");
@@ -303,7 +306,7 @@ const createCalendar = _ => {
         listEventsForSelectedDay();
     }
 
-    // proximo mes
+    // Next month
     if (nextMonthOffset > 0) {
         for (let i = 0; i < nextMonthOffset; i++) {
             const calendarDay = document.createElement("div");
@@ -400,7 +403,7 @@ const createYears = _ => {
     }
 };
 
-// Evento popup
+// Event popup
 const showPopupEvent = _ => {
     const eventPopup = document.querySelector("#eventPopup");
     eventPopup.classList.add("isVisible");
@@ -428,7 +431,7 @@ const createEvent = _ => {
     element.appendChild(eventElement);
 };
 
-// Eventos
+// Events
 const btnPreviousMonth = document.querySelector("#prev");
 const btnNextMonth = document.querySelector("#next");
 const btnShowMonths = document.querySelector("#showMonths");
@@ -454,13 +457,13 @@ btnToday.addEventListener("click", _ => {
 btnAddEvent.addEventListener("click", showPopupEvent);
 btnClosePopup.addEventListener("click", closePopup);
 
-
+//=============== Store event START ==================
 class Event {
-    constructor(name, email, date, Sala, Quantidade, tag) {
+    constructor(name, email, date, sala, Quantidade, tag) {
         this.name = name;
         this.email = email;
         this.date = date;
-        this.Sala = Sala;
+        this.sala = sala;
         this.Quantidade = Quantidade;
         this.tag = tag;
     }
@@ -469,18 +472,18 @@ class Event {
         events.push(event);
     }
 }
-
+// Store event
 btnStoreEvent.addEventListener("click", e => {
     const name = document.querySelector("input[name=name]").value;
+    const email = document.querySelector("input[name=email]").value;
     const date = document.querySelector("input[name=date]").value;
-    const email = document.querySelector("textarea[name=email]").value;
-    const Sala = document.querySelector("select[name=Sala]").value;
-    const Quantidade = document.querySelector("select[name=Quantidade]").value;
+    const sala = document.querySelector("input[name=sala]").value;
+    const Quantidade = document.querySelector("input[name=Quantidade]").value;
     const tag = document.querySelector("select[name=tag]").value;
 
-    const newEvent = new Event(name, date, email, Sala, Quantidade, tag);
+    const newEvent = new Event(name, email, date, Quantidade, sala, tag);
 
-    if (name === "" || date === "" || email === "" || Sala === "" || Quantidade === "" || tag === "") {
+    if (name === "" || email === "" || date === "" || sala === "" || Quantidade === "" || tag === "") {
         alert("Please fill in all fields", "info");
         return;
     } else {
@@ -490,3 +493,4 @@ btnStoreEvent.addEventListener("click", e => {
     listEventsForSelectedDay();
 });
 
+//=============== Store event END ==================

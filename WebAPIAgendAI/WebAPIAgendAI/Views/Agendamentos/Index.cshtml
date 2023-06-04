@@ -3,12 +3,13 @@
 @{
     ViewData["Title"] = "Index";
 }
-
+<link rel=" stylesheet" href="~/css/agendamento.css" />
 <h1>Agendamentos</h1>
 
 <p>
     <a asp-action="CreateAgendamento">Novo Agendamento</a>
 </p>
+<div class="bloco">
 <table class="table">
     <thead>
         <tr>
@@ -63,3 +64,4 @@
 }
     </tbody>
 </table>
+</div>
