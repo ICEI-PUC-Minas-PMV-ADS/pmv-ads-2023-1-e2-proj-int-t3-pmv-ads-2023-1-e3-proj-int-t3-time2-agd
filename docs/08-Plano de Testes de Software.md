@@ -42,10 +42,22 @@ Cenários de testes utilizados na realização dos testes da aplicação AgendAI
 |Critério de Êxito | - O cancelamento foi realizado com sucesso. |
 |  	|  	|
 | Caso de Teste 	| **CT-07 – Editar Agendamentos** 	|
-|Requisito Associado | RF-010	- O sistema deve permitir que o administrador edite os agendamentos |
+|Requisito Associado | RF-007	- O sistema deve permitir que o administrador edite os agendamentos |
 | Objetivo do Teste 	| Alterar dados no agendamento, caso seja necessário. |
 | Passos 	| -  Selecionar a data e hora desejada para o agendamento, dentro da faixa de disponibilidade <br> - Digitar a quantidade desejada <br> - Digitar o nº da sala de reserva do agendamento <br> - Digitar o e-mail institucional <br> - Digitar o ID do funcionário <br> - Selecionar o tipo do evento (aula, prova ou atualização) <br> - Clicar em "salvar" |
 |Critério de Êxito | - A edicação foi realizada com sucesso. |
+|  	|  	|
+| Caso de Teste 	| **CT-08 – Diferenciar usuário** 	|
+|Requisito Associado | RF-008	- O sistema precisará diferenciar o usuário por meio do seu e-mail institucional |
+| Objetivo do Teste 	| O sistema precisará diferenciar o usuário "administrador" e "professor" por meio do seu e-mail institucional ao selecionar o perfil desejado para fazer login |
+| Passos 	| - Acessar a aplicação <br> - Informar o endereço do site <br> - Selecionar o perfil desejado (admininstrador ou professor) <br> - Preencher os campos obrigatórios (e-mail e senha) <br> - Clicar em "Entrar" <br> |
+|Critério de Êxito | - As funcionalidades do sistema devem diferir entre os dois usuários. |
+|  	|  	|
+| Caso de Teste 	| **CT-09 – Meus agendamentos** 	|
+|Requisito Associado | RF-009	- Verificar a lista de agendamentos |
+| Objetivo do Teste 	| O sistema exibirá uma lista com todos os agendamentos  e informações, são elas: ID do funcionário, data, quantidade, sala, e-mail institucional e tipo do evento |
+| Passos 	| - Acessar a aplicação <br> - Informar o endereço do site <br> - Selecionar o perfil desejado (admininstrador ou professor) <br> - Preencher os campos obrigatórios (e-mail e senha) <br> - Clicar em "Entrar" <br> - Clicar em "Meus agendamentos" <br> |
+|Critério de Êxito | - Exibir os agendamentos do usuário. |
 |  	|  	|
 | Caso de Teste 	| **CT-10 – Restrição de agendamento** 	|
 |Requisito Associado | RF-010	-O sistema irá restringir mais de 5 agendamentos semanais por usuário (professor) |
