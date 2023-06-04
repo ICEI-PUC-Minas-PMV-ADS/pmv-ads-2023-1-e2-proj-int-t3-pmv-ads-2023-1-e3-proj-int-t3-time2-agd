@@ -28,15 +28,15 @@ A lista que se seguem apresentam os requisitos funcionais e não funcionais que 
 
 | **Numeração** | **Descrição** | **Prioridade** |
 |  --- | --- | --- |
-| RF-001 | O sistema deve fornecer ao usuário a opção de login através do e-mail institucional. Caso seja o perfil administrativo, o sistema também irá requerir a senha |  ALTA |
-| RF-002 | O perfil administrador terá a possibilidade de: registrar os equipamentos com suas identificações ( ex: SJOHNNTXXX ), especificações ( Nº DE SÉRIE, SISTEMA OPERACIONAL, MODELO ETC ), além do controle de estoque. Ademais, o administrador gerencia operações específicas do sistema como: permissão, alteração e/ou cancelamento de agendamentos |  ALTA |
-| RF-003 | O sistema deve impossibilitar o usuário de continuar o login caso esteja informando um e-mail não autorizado, fazendo-o retomar a etapa de informar o e-mail institucional  |  ALTA |
-| RF-004 | O usuário poderá realizar o agendamento do empréstimo do equipamento na data desejada, desde que o horário esteja disponível e o usuário preencha os dados requisitados ( dentre eles: e-mail institucional, sala, turma e a quantidade de notebooks) necessários para o agendamento |  ALTA |
+| RF-001 | Verificar se o usuário conseguirá efetuar o login a partir das informações corretas (e-mail, senha e perfil do funcionário) |  ALTA |
+| RF-002 | O sistema deve impossibilitar o usuário de continuar o login caso esteja informando um e-mail não autorizado, fazendo-o retomar a etapa de informar o e-mail institucional |  ALTA |
+| RF-003 | O perfil administrador terá a possibilidade de registrar os equipamentos com suas identificações ( ex: SJOHNNTXXX ), especificações (HOSTNAME, MODELO, STATUS). Ademais, o administrador gerencia operações específicas do sistema como: edição, alteração e/ou cancelamento de agendamentos  |  ALTA |
+| RF-004 |O usuário poderá realizar o agendamento do empréstimo do equipamento na data desejada, desde que o horário esteja disponível e o usuário preencha os dados requisitados ( dentre eles: e-mail institucional, sala, turma e a quantidade de notebooks) necessários para o agendamento |  ALTA |
 | RF-005 | O sistema deve possuir uma condição de controle de horário do empréstimo para evitar a interseção de agendamentos por parte dos usuários |  ALTA |
-| RF-006 | O sistema deve fornecer aos usuários a possibilidade de cancelamento do seu próprio agendamento por meio do preenchimento de um formulário com: e-mail institucional e justificativa;OBS: esse formulário será enviado para o suporte administrativo, para ter ciência do ocorrido |  MEDIO |
-| RF-007 | O sistema deve fornecer aos usuários a possibilidade de informar ao perfil administrativo por meio de uma TAG quaisquer informações relacionadas a avarias nos equipamentos e requisições adicionais ao software; O perfil administrativo terá uma aba de notificações com as mensagens recebidas separadas por TAGS |  BAIXO |
-| RF-008 | Mecanismo de busca por datas ( ex: 20/10/2023 ) |  BAIXO |
-| RF-009 | O sistema precisará diferenciar o usuário por meio do seu e-mail institucional |  BAIXO |
+| RF-006 | O sistema deve fornecer aos usuários a possibilidade de cancelamento do seu próprio agendamento de forma simples, apenas clicando em "cancelar". Essa ação só será permitida para o perfil Administrador |  MEDIO |
+| RF-007 | O sistema deve permitir que o administrador edite os agendamentos |  BAIXO |
+| RF-008 | O sistema precisará diferenciar o usuário por meio do seu e-mail institucional |  BAIXO |
+| RF-009 | O usuário poderá verificar a lista de agendamentos |  BAIXO |
 | RF-010 | O sistema irá restringir mais de 5 agendamentos semanais por usuário (professor) |  BAIXO |
 
 ### Requisitos não Funcionais
