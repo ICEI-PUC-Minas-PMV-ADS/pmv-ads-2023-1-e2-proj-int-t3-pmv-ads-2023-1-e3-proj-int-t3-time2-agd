@@ -54,13 +54,13 @@ Cenários de testes utilizados na realização dos testes da aplicação AgendAI
 |Critério de Êxito | - As funcionalidades do sistema devem diferir entre os dois usuários. |
 |  	|  	|
 | Caso de Teste 	| **CT-09 – Meus agendamentos** 	|
-|Requisito Associado | RF-009	- Verificar a lista de agendamentos |
+|Requisito Associado | RF-009	- O usuário poderá verificar a lista de agendamentos |
 | Objetivo do Teste 	| O sistema exibirá uma lista com todos os agendamentos  e informações, são elas: ID do funcionário, data, quantidade, sala, e-mail institucional e tipo do evento |
 | Passos 	| - Acessar a aplicação <br> - Informar o endereço do site <br> - Selecionar o perfil desejado (admininstrador ou professor) <br> - Preencher os campos obrigatórios (e-mail e senha) <br> - Clicar em "Entrar" <br> - Clicar em "Meus agendamentos" <br> |
 |Critério de Êxito | - Exibir os agendamentos do usuário. |
 |  	|  	|
 | Caso de Teste 	| **CT-10 – Restrição de agendamento** 	|
-|Requisito Associado | RF-010	-O sistema irá restringir mais de 5 agendamentos semanais por usuário (professor) |
+|Requisito Associado | RF-010	- O sistema irá restringir mais de 5 agendamentos semanais por usuário (professor) |
 | Objetivo do Teste 	| Verificar se o mesmo usuário não excedeu o limite de 5 agendamentos semanais. |
 | Passos 	| - O usuário fará a seleção de seus agendamentos semanais corretamente até a quinta solicitação, na sexta solicitação quando o usuário clicar em "salvar agendamento" aparecera uma mensagem do sistema na tela "O usuário atingiu seu limite máximo de agendamentos" |
 |Critério de Êxito | - O sistema conseguir identificar com sucesso que nenhum usuário ultrapassou o limite padrão pré-determinado. |
