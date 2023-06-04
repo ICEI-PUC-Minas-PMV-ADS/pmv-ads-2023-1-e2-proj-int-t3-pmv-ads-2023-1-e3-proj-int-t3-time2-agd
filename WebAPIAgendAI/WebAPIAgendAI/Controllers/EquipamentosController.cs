@@ -10,7 +10,7 @@ using WebAPIAgendAI.Models;
 
 namespace WebAPIAgendAI.Controllers
 {
-    //[Authorize(Roles = "Administrador")]
+    [Authorize(Roles = "Administrador")]
     public class EquipamentosController : Controller
     {
         private readonly ApplicationDbContext _context;

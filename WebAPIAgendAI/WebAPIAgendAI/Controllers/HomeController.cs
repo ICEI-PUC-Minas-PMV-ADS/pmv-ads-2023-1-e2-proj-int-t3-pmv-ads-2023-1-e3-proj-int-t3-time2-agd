@@ -2,10 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using System.Collections;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
 using System.Threading.Tasks;
 using WebAPIAgendAI.Models;
 
@@ -55,10 +52,6 @@ namespace WebAPIAgendAI.Controllers
             }
             return View(agendamento);
         }
-        
-        public async Task<IActionResult> ListaAgendamento()
-        {
-            return View(await _context.Agendamentos.ToListAsync());
-        }
+       
     }
 }

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
@@ -15,18 +16,35 @@ namespace WebAPIAgendAI.Controllers
         {
             _context = context;
         }
-        //[Authorize(Roles = "Administrador")]
+        [Authorize(Roles = "Administrador")]
         // GET: Agendamentos
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Agendamentos.ToListAsync());
+            return View(await _context.Agendamentos.OrderBy(x => x.EmailInstitucional).ToListAsync());
         }
-
-        public async Task<IActionResult> ListaAgendamento()
+        public async Task<IActionResult> MeuAgendamento()
         {
-            return View(await _context.Agendamentos.ToListAsync());
-        }
+            var funcionario = _context.Funcionarios.FirstOrDefault(a => a.Nome == User.Identity.Name);
 
+            var usuario = await _context.Agendamentos
+                .FirstOrDefaultAsync(m => m.EmailInstitucional == funcionario.EmailInstitucional);
+
+            if (usuario == null)
+            {
+                return NotFound();
+            }
+
+            var f = await _context.Funcionarios
+                 .Include(t => t.Agendamentos)
+                .FirstOrDefaultAsync(m => m.Id == usuario.FuncionarioId);
+
+            if (f == null)
+            {
+                return NotFound();
+            }
+
+            return View(f);
+        }
         // GET: Agendamentos/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -44,7 +62,8 @@ namespace WebAPIAgendAI.Controllers
 
             return View(agendamento);
         }
-        //[Authorize(Roles = "Administrador")]
+
+        
         // GET: Agendamentos/Create
         public IActionResult CreateAgendamento()
         {
@@ -55,7 +74,7 @@ namespace WebAPIAgendAI.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
 
-        //[Authorize(Roles = "Administrador")]
+        
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> CreateAgendamento([Bind("Data,Quantidade,Sala,EmailInstitucional,FuncionarioId,Tipo")] Agendamento agendamento)
@@ -68,7 +87,7 @@ namespace WebAPIAgendAI.Controllers
             }
             return View(agendamento);
         }
-
+        [Authorize(Roles = "Administrador")]
         // GET: Agendamentos/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
@@ -84,7 +103,7 @@ namespace WebAPIAgendAI.Controllers
             }
             return View(agendamento);
         }
-        
+        [Authorize(Roles = "Administrador")]
         // POST: Agendamentos/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
@@ -120,7 +139,7 @@ namespace WebAPIAgendAI.Controllers
             return View(agendamento);
         }
 
-        //[Authorize(Roles = "Administrador")]
+        [Authorize(Roles = "Administrador")]
         // GET: Agendamentos/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
@@ -138,7 +157,7 @@ namespace WebAPIAgendAI.Controllers
 
             return View(agendamento);
         }
-        //[Authorize(Roles = "Administrador")]
+        [Authorize(Roles = "Administrador")]
         // POST: Agendamentos/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]

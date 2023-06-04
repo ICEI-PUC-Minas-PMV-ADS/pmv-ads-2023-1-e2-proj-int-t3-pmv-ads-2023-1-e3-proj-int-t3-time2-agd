@@ -30,7 +30,6 @@ namespace WebAPIAgendAI.Models
 
         [Required(ErrorMessage = "Campo Obrigatório!")]
         public Tipo Tipo { get; set; }
-
     }
     public enum Tipo
     {

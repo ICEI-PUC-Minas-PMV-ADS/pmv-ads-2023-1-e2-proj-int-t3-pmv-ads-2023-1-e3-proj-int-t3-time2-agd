@@ -2694,6 +2694,6 @@ C:\Users\Joe Monteiro\OneDrive\Desktop\Agendai_Front_Back\Agendai_Front_Back\Web
 C:\git\pmv-ads-2023-1-e2-proj-int-t3-pmv-ads-2023-1-e3-proj-int-t3-time2-agd\WebAPIAgendAI\WebAPIAgendAI\bin\Debug\net5.0\ref\WebAPIAgendAI.dll
 C:\git\pmv-ads-2023-1-e2-proj-int-t3-pmv-ads-2023-1-e3-proj-int-t3-time2-agd\WebAPIAgendAI\WebAPIAgendAI\obj\Debug\net5.0\staticwebassets\WebAPIAgendAI.StaticWebAssets.xml
 C:\git\pmv-ads-2023-1-e2-proj-int-t3-pmv-ads-2023-1-e3-proj-int-t3-time2-agd\WebAPIAgendAI\WebAPIAgendAI\obj\Debug\net5.0\Razor\Views\Agendamentos\CreateAgendamento.cshtml.g.cs
-C:\git\pmv-ads-2023-1-e2-proj-int-t3-pmv-ads-2023-1-e3-proj-int-t3-time2-agd\WebAPIAgendAI\WebAPIAgendAI\obj\Debug\net5.0\Razor\Views\Agendamentos\ListaAgendamento.cshtml.g.cs
 C:\git\pmv-ads-2023-1-e2-proj-int-t3-pmv-ads-2023-1-e3-proj-int-t3-time2-agd\WebAPIAgendAI\WebAPIAgendAI\obj\Debug\net5.0\Razor\Views\Funcionarios\Agendamentos.cshtml.g.cs
 C:\git\pmv-ads-2023-1-e2-proj-int-t3-pmv-ads-2023-1-e3-proj-int-t3-time2-agd\WebAPIAgendAI\WebAPIAgendAI\obj\Debug\net5.0\Razor\Views\Funcionarios\MeusAgendamentos.cshtml.g.cs
+C:\git\pmv-ads-2023-1-e2-proj-int-t3-pmv-ads-2023-1-e3-proj-int-t3-time2-agd\WebAPIAgendAI\WebAPIAgendAI\obj\Debug\net5.0\Razor\Views\Agendamentos\MeuAgendamento.cshtml.g.cs
