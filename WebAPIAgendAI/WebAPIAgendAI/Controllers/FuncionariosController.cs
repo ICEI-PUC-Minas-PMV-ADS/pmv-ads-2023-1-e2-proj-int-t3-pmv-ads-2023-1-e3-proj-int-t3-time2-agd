@@ -11,7 +11,7 @@ using WebAPIAgendAI.Models;
 
 namespace WebAPIAgendAI.Controllers
 {
-    [Authorize (Roles ="Administrador")]
+    //[Authorize (Roles ="Administrador")]
     public class FuncionariosController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -112,7 +112,7 @@ namespace WebAPIAgendAI.Controllers
 
             return View(funcionario);
         }
-        [Authorize]
+        //[Authorize]
         public async Task<IActionResult> Agendamentos(int? id)
         {
             if (id == null)

@@ -34,12 +34,12 @@ namespace WebAPIAgendAI.Controllers
         {
             return View();
         }
-        [Authorize]
+        //[Authorize]
         public IActionResult CreateAgendamento()
         {
             return View();
         }
-        [Authorize]
+        //[Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> CreateAgendamento([Bind("Data,Quantidade,Sala,EmailInstitucional,FuncionarioId,Tipo")] Agendamento agendamento)
